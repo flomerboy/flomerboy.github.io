@@ -11,6 +11,7 @@
     <meta http-equiv="author" content="Ryan Mather">
     <meta name="keyword" content="Graphic Designer, Industrial Designer, Branding, Industrial Design, Graphic Design, User Experience, RISD, Polymaker">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
 <!-- It's responsive -->
 <!-- I'm using separate style sheets instead of one for better performance -->
 <!-- and for some reason it makes more sense to me that they should be separate -->
@@ -18,8 +19,21 @@
     <link rel="stylesheet" media="(min-width:640px)" href="browser.css"/>
 </head>
 
+<!-- Typed.js for that sexy typing animation. http://www.mattboldt.com/demos/typed-js/ -->
+	<script src="typed.js"></script>
+	<script>
+	  $(function(){
+	      $("span").typed({
+	        strings: ["things.", "websites.", "furniture.", "brands.", "organizations.", "forts."],
+	        typeSpeed: 65,
+	        loop: true
+	      });
+	  });
+	</script>
+
+
 <body>
-	<h1>Ryan is a designer.<br /> He can build <span>things.</span></h1>
+	<h1>Ryan is a designer.<br /> He can build <a><span></span></a></h1>
 
 
 </body>

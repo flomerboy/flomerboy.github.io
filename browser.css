@@ -5,7 +5,7 @@
 /* Typography */
 
 html {
-	color:#FCFCFC;
+	background-color:#F2F2F2;
 }
 
 /*Some exciting information*/
@@ -20,6 +20,11 @@ h1 {
 	color: #0D0D0D;
 }
 
-span {
-	box-shadow: 10px 10px 10px #F2F2F2;
+a {
+	box-shadow: 10px 10px 10px #E5E5E5;
+	background-color: #FFFFFF;
+	border-radius: .04em;
+	padding-right:.25em;
+	padding-left:.25em;
+	padding-bottom: .15em;
 }
