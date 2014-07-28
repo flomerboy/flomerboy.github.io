@@ -10,10 +10,10 @@ html {
 
 /*Some exciting information*/
 h1 {
-	padding-top: 2em;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-bottom: 1em;
+	padding-top: 1em;
+	padding-left: .5em;
+	padding-right: .5em;
+	padding-bottom: .5em;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 4em;
