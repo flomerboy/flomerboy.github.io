@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic|Roboto+Slab:400,700);
+
+/* Typography */
+/* Typography */
+/* Typography */
+
+html {
+	color:#FCFCFC;
+}
+
+/*Some exciting information*/
+h1 {
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-right: 1em;
+	padding-bottom: 2em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 5em;
+	color: #0D0D0D;
+}
+
+span {
+	box-shadow: 10px 10px 10px #F2F2F2;
+}
