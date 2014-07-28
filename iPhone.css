@@ -24,14 +24,14 @@ h1 {
 
 h2 {
 	position: absolute;
-	top: 15em;
-	padding-left: 3em;
+	top: 18em;
+	padding-left: 4em;
 	padding-right: 1em;
 	padding-bottom: 2em;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-style: italic;
-	font-size: 1.5em;
+	font-size: 1em;
 	color: #595959;
 }
 
