@@ -23,13 +23,15 @@ h1 {
 /*Not really as exciting as the other information*/
 
 h2 {
-	padding-left: 6.5em;
+	position: absolute;
+	top: 15em;
+	padding-left: 3em;
 	padding-right: 1em;
 	padding-bottom: 2em;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-style: italic;
-	font-size: 2em;
+	font-size: 1.5em;
 	color: #595959;
 }
 
