@@ -10,7 +10,8 @@ html {
 
 /*Some exciting information*/
 h1 {
-	padding-left: 20%;
+	padding-top: 2em;
+	padding-left: 2em;
 	padding-right: 1em;
 	padding-bottom: 2em;
 	font-family: 'Roboto', sans-serif;
