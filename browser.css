@@ -9,6 +9,7 @@ html {
 }
 
 /*Some exciting information*/
+
 h1 {
 	padding-top: 2em;
 	padding-left: 2em;
@@ -29,7 +30,7 @@ h2 {
 	font-weight: 300;
 	font-style: italic;
 	font-size: 2em;
-	color: #404040;
+	color: #595959;
 }
 
 
