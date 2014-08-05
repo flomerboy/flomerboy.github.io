@@ -1,18 +1,17 @@
+/*Thanks Google, for all of these weights of Roboto*/
+
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic|Roboto+Slab:400,700);
 
-/* Typography */
-/* Typography */
-/* Typography */
-
-html {
-	background-color:#F2F2F2;
-}
+/* TYPOGRAPHY */
+/* TYPOGRAPHY */
+/* TYPOGRAPHY */
 
 /*Some exciting information*/
 
 h1 {
+	position:relative;
 	padding-top: 2em;
-	padding-left: 2em;
+	margin-left: 2em;
 	padding-right: 1em;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -23,6 +22,7 @@ h1 {
 /*Not really as exciting as the other information*/
 
 h2 {
+	padding-top:2em;
 	padding-left: 6.5em;
 	padding-right: 1em;
 	padding-bottom: 2em;
@@ -42,3 +42,58 @@ a {
 	padding-left:.25em;
 	padding-bottom: .15em;
 }
+
+/* POSITIONING */
+/* POSITIONING */
+/* POSITIONING */
+
+/*html and body reset to kill that gross border that tries to be there by default*/
+html {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+}
+
+#banner {
+	background-color:#F2F2F2;
+	height:30em;
+	z-index: 1;
+}
+
+#eyeballDiv
+{
+	position:fixed;
+	background-color:rgba(255,255,255,.85);
+	left: 2.9em;
+	border-bottom-left-radius:.3em;
+	border-bottom-right-radius:.3em;
+	box-shadow: 5px 5px 20px #E5E5E5;
+	z-index: 2;
+}
+
+#eyeballDivDown
+{
+	position:fixed;
+	background-color:rgba(255,255,255,.85);
+	right: 2.9em;
+	border-bottom-left-radius:.2em;
+	border-bottom-right-radius:.2em;
+	box-shadow: 5px 5px 20px #E5E5E5;
+	z-index: 3;
+}
+
+
+#eyeballImg
+{
+	/* Something might go here eventually */
+}
+
+#eyeballImgDown
+{
+	transform:rotate(180deg);
+}
+

@@ -1,16 +1,16 @@
+/*Thanks Google, for all of these weights of Roboto*/
+
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic|Roboto+Slab:400,700);
 
-/* Typography */
-/* Typography */
-/* Typography */
 
-html {
-	background-color:#F2F2F2;
-}
+/* TYPOGRAPHY */
+/* TYPOGRAPHY */
+/* TYPOGRAPHY */
 
 /*Some exciting information*/
 
 h1 {
+	position:relative;
 	padding-top: 1em;
 	padding-left: .5em;
 	padding-right: .5em;
@@ -24,7 +24,7 @@ h1 {
 
 h2 {
 	position: absolute;
-	top: 26em;
+	top: 28em;
 	padding-left: 4em;
 	padding-right: 1em;
 	padding-bottom: 2em;
@@ -43,3 +43,48 @@ a {
 	padding-left:.25em;
 	padding-bottom: .15em;
 }
+
+
+/* POSITIONING */
+/* POSITIONING */
+/* POSITIONING */
+
+/*html and body reset to kill that gross border that tries to be there by default*/
+html {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+}
+
+#banner {
+	background-color:#F2F2F2;
+	height:25em;
+	z-index: 1;
+}
+
+#eyeballDiv
+{
+	z-index:2;
+	position:fixed;
+	background-color:rgba(255,255,255,.85);
+	right: 2em;
+	border-bottom-left-radius:.3em;
+	border-bottom-right-radius:.3em;
+	box-shadow: 5px 5px 20px #E5E5E5;
+}
+
+#eyeballDivDown
+{
+	display:none;
+}
+
+
+#eyeballImg
+{
+	opacity:1;
+}
+
