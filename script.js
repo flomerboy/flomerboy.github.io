@@ -5,11 +5,19 @@ $(document).ready(function() {
   		return false;
 	});
 
-	$("div").mousedown(function() {
+	$("eyeballDiv").mousedown(function() {
 		$(this).css('box-shadow','5px 5px 18px #D5D5D5');
 	});
 
-	$("div").mouseup(function() {
+	$("eyeballDivDown").mousedown(function() {
+		$(this).css('box-shadow','5px 5px 18px #D5D5D5');
+	});
+
+	$("eyeballDiv").mouseup(function() {
+		$(this).css('box-shadow','5px 5px 20px #E5E5E5');
+	});
+
+	$("eyeballDivDown").mouseup(function() {
 		$(this).css('box-shadow','5px 5px 20px #E5E5E5');
 	});
 
