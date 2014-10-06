@@ -7,41 +7,55 @@
 /* TYPOGRAPHY */
 
 /*Some exciting information*/
-
-h1 {
-	position:relative;
-	padding-top: 2em;
+h1 {	
+	margin-top: 0px;
+	padding-top: 1.5em;
 	padding-bottom:1em;
 	margin-left: 2em;
 	padding-right: 1em;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 5em;
-	color: #0D0D0D;
+	color: rgba(0,0,0,.9);
 }
 
 /*Not really as exciting as the other information*/
-
 h2 {
-	padding-top:2em;
-	padding-left: 6.5em;
-	padding-right: 1em;
+	padding-top:2.5em;
+	padding-left: 5em;
+	padding-right: 12em;
 	padding-bottom: 2em;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	font-style: italic;
-	font-size: 2em;
-	color: #595959;
+	font-weight: 400;
+	font-size: 1.99em;
+	color: rgba(0,0,0,.8);
+	margin: 0;
 }
 
+h3 {
+	padding-top:2.5em;
+	padding-left: 10em;
+	padding-right: 12em;
+	padding-bottom: 2em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: rgba(0,0,0,.8);
+}
 
 a {
-	box-shadow: 10px 10px 10px #E5E5E5;
+	color: #f05f68;
+	text-decoration: none
+}
+
+.typed {
+	box-shadow: 10px 10px 20px rgba(0,0,0,.15);
 	background-color: #FFFFFF;
-	border-radius: .04em;
+	border-radius: 5px;
 	padding-right:.25em;
 	padding-left:.25em;
 	padding-bottom: .15em;
+	color: #000000;
 }
 
 /* POSITIONING */
@@ -49,7 +63,7 @@ a {
 /* POSITIONING */
 
 /*html and body reset to kill that gross border that tries to be there by default*/
-html {
+html, div, figure, figcaption {
 	margin:0px;
 	padding:0px;
 }
@@ -57,44 +71,97 @@ html {
 body {
 	margin:0px;
 	padding:0px;
+	background-color: rgba(0,0,0,.015);
+}
+
+figcaption {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: rgba(0,0,0,.8);
+}
+
+.thumbnail
+{
+	border-radius:5px;
+	transition: box-shadow .5s;
+}
+
+.thumbnail:hover{
+	box-shadow: 10px 10px 20px rgba(0,0,0,.15);
+}
+
+.thumbnail:active{
+	box-shadow: 15px 15px 25px rgba(0,0,0,.20);
+}
+
+.project {
+	padding: 5%;
+	padding-bottom: 5%;
+	float:left;
+}
+
+/*bukkits are for holding things in*/
+.bukkit{
+	clear:left;
+	width: 100%;
+}
+
+#bio
+{
+	background: rgba(0,0,0,.03);
+
+}
+
+#even {
+	clear:left;
+	padding-left: 11%;
+	
+}
+
+#odd {
+	clear:left;
+	padding-left: 16%;
 }
 
 #banner
 {
-	background-color:#F2F2F2;
-	z-index: 1;
+	background: url(stripes.svg);
+	
 }
 
 #eyeballDiv
 {
 	position:fixed;
-	background-color:rgba(255,255,255,.85);
+	background-color:rgba(255,255,255,.93);
 	left: 2.9em;
-	border-bottom-left-radius:.3em;
-	border-bottom-right-radius:.3em;
-	box-shadow: 5px 5px 20px #E5E5E5;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 	z-index: 2;
+	box-shadow: 10px 10px 20px rgba(0,0,0,.15);
 }
 
 #eyeballDivDown
 {
+	display: none;
 	position:fixed;
-	background-color:rgba(255,255,255,.85);
+	background-color:rgba(255,255,255,.93);
 	right: 2.9em;
-	border-bottom-left-radius:.2em;
-	border-bottom-right-radius:.2em;
-	box-shadow: 5px 5px 20px #E5E5E5;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 	z-index: 3;
 }
 
 
 #eyeballImg
 {
-	/* Something might go here eventually */
+	
 }
 
 #eyeballImgDown
 {
 	transform:rotate(180deg);
 }
+
 

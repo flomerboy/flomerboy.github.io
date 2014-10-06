@@ -2,15 +2,13 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic|Roboto+Slab:400,700);
 
-
-/* TYPOGRAPHY */
+/* TYPOGRAPHY */e
 /* TYPOGRAPHY */
 /* TYPOGRAPHY */
 
 /*Some exciting information*/
-
 h1 {
-	position:relative;
+	margin-top: 0px;
 	padding-top: 1em;
 	padding-left: .5em;
 	padding-right: .5em;
@@ -21,7 +19,6 @@ h1 {
 }
 
 /*Not really as exciting as the other information*/
-
 h2 {
 	position: absolute;
 	top: 28em;
@@ -35,8 +32,9 @@ h2 {
 	color: #595959;
 }
 
+/*The bit where it talks about all the things I can build*/
 a {
-	box-shadow: 10px 10px 10px #E5E5E5;
+	box-shadow: 5px 5px 20px rgba(0,0,0,.2);
 	background-color: #FFFFFF;
 	border-radius: .04em;
 	padding-right:.25em;
@@ -44,41 +42,58 @@ a {
 	padding-bottom: .15em;
 }
 
-
 /* POSITIONING */
 /* POSITIONING */
 /* POSITIONING */
 
 /*html and body reset to kill that gross border that tries to be there by default*/
-html {
+html, body {
 	margin:0px;
 	padding:0px;
 }
 
-body {
-	margin:0px;
-	padding:0px;
+.thumbnail
+{
+	border-radius:2px;
 }
 
+/*bukkits are for holding things in*/
+.bukkit{
+	clear:left;
+	width: 100%;
+}
+
+.project
+{
+	margin:auto;
+	text-align: center;
+}
+
+#bio
+{
+
+}
+
+/*I think it's nice if the top bit is a light gray, to take the edge off*/
 #banner {
 	background-color:#F2F2F2;
 	z-index: 1;
 }
 
+/*The div that you can click to go to the bottom of the page.*/
 #eyeballDiv
 {
-	z-index:2;
 	position:fixed;
 	background-color:rgba(255,255,255,.85);
-	right: 2em;
-	border-bottom-left-radius:.3em;
-	border-bottom-right-radius:.3em;
-	box-shadow: 5px 5px 20px #E5E5E5;
+	right: 2.9em;
+	border-bottom-left-radius:.2em;
+	border-bottom-right-radius:.2em;
+	z-index: 3;
 }
 
 #eyeballDivDown
 {
-	display:none;
+	display: none;
 }
 
 
@@ -86,4 +101,5 @@ body {
 {
 	opacity:1;
 }
+
 

@@ -11,12 +11,13 @@
 		<meta http-equiv="author" content="Ryan Mather">
 		<meta name="keyword" content="Graphic Designer, Industrial Designer, Branding, Industrial Design, Graphic Design, User Experience, RISD, Polymaker">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
 		<script src="scriptGlobal.js"></script>
 
 
 		<!-- It's responsive -->
 		<!-- I'm using separate style sheets instead of one for better performance -->
-		<!-- and for some reason it makes more sense to me that they should be separate -->
+		<!-- and it makes more sense to me that they should be separate -->
 		<link rel="stylesheet" media="(max-width:640px)" href="iPhone.css"/>
 		<link rel="stylesheet" media="(min-width:641px)" href="browser.css"/>
 
@@ -26,9 +27,9 @@
 		<script>
 			$(function(){
 				$("span").typed({
-					strings: ["things.", "websites.", "furniture.", "brands.", "teams.", "forts."],
+					strings: ["play."],
 					typeSpeed: 65,
-					loop: true
+					loop: false
 				});
 			});
 		</script>
@@ -50,7 +51,7 @@
 	<!--Here's the body! This is where all the art and design happens-->
 	<body>
 	
-		<a href="#banner"><div id="eyeballDiv"><img src="home1.svg" id="eyeballImg"/></div></a>
+		<a href="#banner" id="icon"><div id="eyeballDiv"><img src="home1.svg" id="eyeballImg"/></div></a>
 
 		<div id="banner">
 			<h1>Ryan is a designer.<br /> He can build 
@@ -58,41 +59,51 @@
 			</h1>
 		</div>
 
-		<div class="bukkit">
-			
-			<a href="play.html">
-				<div class="project" id="odd">
-					<figure>
-						<img class="thumbnail" src="images/playCover.png" />
-						<figcaption><br />Taxonomy of Play</figcaption>
-					</figure>
-				</div>
-			</a>
-			
-			
-			<a href="brickDress.html">
-				<div class="project">
-					<figure>
-						<img class="thumbnail" src="images/brickCover.png" />
-						<figcaption><br />Unexpected Interaction with Brick Wall</figcaption>
-					</figure>
-				</div>
-			</a>
+		<div class="bukkit" id="sketchbook">
+			<h2>
+				<img src="images/play1.png">
+				</img>
+			</h2>
+		</div>
 
-			<a href="http://firsthand.land">
-				<div class="project" id="even">
-					<figure>
-						<img class="thumbnail" src="images/firstCover.png" />
-						<figcaption><br />First-hand Land: VR for advertisements</figcaption>
-					</figure>
-				</div>
-			</a>
+		<div class="bukkit" id="intro">
+			<h2>
+				I began my exploration with play by creating a taxonomy of play. The purpose of creating this taxonomy was to create a personal framework to draw connections within about the nature of play. I started out by referencing <a href="http://playeverything.wordpress.com/play-and-playwork/play-types/"> this </a>comprehensive list of the types of play. 
+			</h2>
+		</div>
 
-			<div class="project">
-				<img class="thumbnail" src="images/caseCover.png" />
-			</div>
+		<div class="bukkit" id="sketchbook">
+			<h2>
+				<img src="images/play2.png">
+				</img>
+			</h2>
+		</div>
 
-			
+		<div class="bukkit" id="stuart">
+			<h2>
+				After watching <a href="http://www.ted.com/talks/stuart_brown_says_play_is_more_than_fun_it_s_vital?language=en">this TED talk</a> by Stuart Brown, I thought that there must be a simpler way of disecting how play affects the development of the individual. I thought back to the notion that the complete individual is composed of three parts: physical, social, and intellectual. 
+			</h2>
+		</div>
+
+		<div class="bukkit" id="taxonomy">
+			<h2>
+				I took this idea and developed a system to assign colors to playtypes based on the extent to which they exercise the body, ego, and intellect.
+			</h2>
+		</div>
+
+
+		<div class="bukkit" id="poster">
+			<h2>
+				<img src="images/play3.png">
+				</img>
+			</h2>
+		</div>
+
+		<div class="bukkit" id="detail">
+			<h2>
+				<img src="images/play4.png">
+				</img>
+			</h2>
 		</div>
 
 		<div class="bukkit" id="bio">
@@ -102,14 +113,11 @@
 				<a href="mailto:rmather@risd.edu" target="_blank">Email</a>, 
 				<a href="resume.pdf">resume</a>, 
 				<a href="http://twitter.com/flomerboy">twitter</a>, 
-				<a href="http://blog.ryancan.build">web-log</a>, 
+				<a href="http://blog.ryancan.build">web-log</a>,  
 				<a href="https://github.com/flomerboy">fork me</a>
 		</div>
 
-			
 		
-
-
 	</body>
 
 </html>
