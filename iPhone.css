@@ -11,11 +11,11 @@ h1 {
 	margin-top: 0px;
 	padding-top: 1.5em;
 	padding-bottom:1em;
-	margin-left: 2em;
+	margin-left: 4em;
 	padding-right: 1em;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	font-size: 5em;
+	font-size: 2em;
 	color: rgba(0,0,0,.9);
 }
 
@@ -23,11 +23,11 @@ h1 {
 h2 {
 	padding-top:2.5em;
 	padding-left: 5em;
-	padding-right: 12em;
+	padding-right: 4em;
 	padding-bottom: 2em;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	font-size: 1.99em;
+	font-size: 1em;
 	color: rgba(0,0,0,.8);
 	margin: 0;
 }
@@ -72,6 +72,10 @@ body {
 	margin:0px;
 	padding:0px;
 	background-color: rgba(0,0,0,.015);
+}
+
+img {
+	max-width: 100%;
 }
 
 figcaption {
