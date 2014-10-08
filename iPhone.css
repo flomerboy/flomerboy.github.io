@@ -19,6 +19,13 @@ h1 {
 	color: rgba(0,0,0,.9);
 }
 
+@media screen and (min-width:660px){
+	h1{
+	    font-size: 3em;
+	    }
+}
+
+
 /*Not really as exciting as the other information*/
 h2 {
 	padding-top:2.5em;
