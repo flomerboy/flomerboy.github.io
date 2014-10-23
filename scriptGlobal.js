@@ -20,7 +20,15 @@ $(document).ready(function(){
 		$('#eyeballDiv').css({
 			'box-shadow': (3+(20*eDDAlpha)) + 'px 3px ' + (14 + (20*eDDAlpha)) + 'px rgba(0,0,0,' + (.10+eDDAlpha/1.5) + ')',
 			'left': 2.3 + eDAlpha +'em'
-		});
+		});	
+		console.log(eDAlpha);
+		if(eDAlpha<.11){
+			document.getElementById("eyeballImg").src="home2.svg";
+		} else {
+			document.getElementById("eyeballImg").src="home1.svg";
+		}
+			console.log('bottom');
+			
 	},
 
 	deBug = function(){
@@ -44,6 +52,7 @@ $(document).ready(function(){
 			}
 		}
 	}
+
 
 	
 
