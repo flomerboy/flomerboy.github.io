@@ -63,7 +63,7 @@ a {
 /* POSITIONING */
 
 /*html and body reset to kill that gross border that tries to be there by default*/
-html
+/*html
 {
 	width: 100%;
     height: 100%;
@@ -74,6 +74,18 @@ html, div, figure, figcaption
 {
 	margin:0px;
 	padding:0px; 
+}*/
+
+/*html and body reset to kill that gross border that tries to be there by default*/
+html, div, figure, figcaption {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	background-color: rgba(0,0,0,.015);
 }
 
 body {
@@ -155,17 +167,6 @@ figcaption {
 	border-bottom-right-radius:5px;
 	z-index: 2;
 	box-shadow: 10px 10px 20px rgba(0,0,0,.15);
-}
-
-#eyeballDivDown
-{
-	display: none;
-	position:fixed;
-	background-color:rgba(255,255,255,.93);
-	right: 2.9em;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;
-	z-index: 3;
 }
 
 
