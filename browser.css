@@ -181,4 +181,7 @@ figcaption {
 	transform:rotate(180deg);
 }
 
+.board {
+	width: 90%;
+}
 
