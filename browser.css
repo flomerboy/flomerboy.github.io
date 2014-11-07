@@ -99,7 +99,7 @@ body {
 }
 
 figure {
-	padding: 1em;
+	padding: 1.5em;
 }
 
 figcaption {
@@ -148,13 +148,13 @@ figcaption {
 
 #even {
 	clear:left;
-	padding-left: 10em;
+	padding-left: 8em;
 	
 }
 
 #odd {
 	clear:left;
-	padding-left: 14em;
+	padding-left: 12em;
 }
 
 #banner
@@ -189,3 +189,7 @@ figcaption {
 	width: 90%;
 }
 
+div#bio.bukkit {
+	margin-top: 4em;
+	background: url(stripes2.svg);
+}
