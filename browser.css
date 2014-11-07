@@ -98,6 +98,10 @@ body {
     overflow-x: hidden;
 }
 
+figure {
+	padding: 1em;
+}
+
 figcaption {
 	text-align: center;
 	font-family: 'Roboto', sans-serif;

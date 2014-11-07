@@ -25,8 +25,6 @@ $(document).ready(function(){
 		console.log(eDAlpha);
 		if(eDAlpha<.11){
 			document.getElementById("eyeballImg").src="home2.svg";
-		} else if (wt<.1) {
-			document.getElementById("eyeballImg").src="home3.svg";
 		} else {
 			document.getElementById("eyeballImg").src="home1.svg";
 		}
@@ -38,6 +36,7 @@ $(document).ready(function(){
 																//Debugging tools
   // 	console.log('window height: '+ wh);
      	console.log('window scrollTop: ' + wt);
+     	console.log(url);
   //   	console.log('eDAlpha: ' + eDAlpha);
   //   	console.log('eDDAlpha: ' + eDDAlpha);
   //   	console.log('document height: ' + dh );
