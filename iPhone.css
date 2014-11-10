@@ -34,7 +34,7 @@ h2 {
 	padding-bottom: 2em;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	font-size: 1.5em;
+	font-size: 1em;
 	color: rgba(0,0,0,.8);
 	margin: 0;
 }
@@ -111,6 +111,7 @@ figcaption {
 	padding: 5%;
 	padding-bottom: 5%;
 	text-align: center;
+
 }
 
 /*bukkits are for holding things in*/
@@ -119,10 +120,10 @@ figcaption {
 	width: 100%;
 }
 
-#bio
-{
-	background: rgba(0,0,0,.03);
-	opacity:.9;
+
+div#bio.bukkit {
+	margin-top: 4em;
+	background: url(stripes2.svg);
 }
 
 #banner

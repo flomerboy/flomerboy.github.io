@@ -14,6 +14,7 @@ $(document).ready(function(){
 		dh = $(document).height(),
     	// eDDAlpha = wt/(dh-wh)*.4 + .1, 					//this value starts low and ends high
     	eDAlpha = (1 - wt/(dh-wh))*.4 + .1;				//this value starts high and ends low
+
 	},
 
 	draw = function(){
