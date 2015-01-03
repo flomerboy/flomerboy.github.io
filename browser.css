@@ -9,14 +9,14 @@
 /*Some exciting information*/
 h1 {	
 	margin-top: 0px;
-	padding-top: 1.5em;
-	padding-bottom:1em;
+	padding-top: 2.5em;
+	padding-bottom:2.5em;
 	margin-left: 2em;
 	padding-right: 1em;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 5em;
-	color: rgba(0,0,0,.9);
+	color: #FFFFFF;
 }
 
 /*Not really as exciting as the other information*/
@@ -44,7 +44,7 @@ h3 {
 }
 
 a {
-	color: #f05f68;
+	color: #0000FF;
 	text-decoration: none
 }
 
@@ -159,8 +159,7 @@ figcaption {
 
 #banner
 {
-	background: url(stripes.svg);
-	
+	background: url(stripes.svg); 
 }
 
 #eyeballDiv
