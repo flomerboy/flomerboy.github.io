@@ -1,7 +1,22 @@
 <!DOCTYPE html>
-<html>
 <!-- The personal website of Ryan Flomerfelt Mather -->
 <!-- He built this from the ground up - vanilla -->
+<!-- font magic -->
+<script type="text/javascript">
+WebFontConfig = { fontdeck: { id: '50837' } };
+
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();
+</script>
+
+<html>
 
 	<head>
 		<meta charset="utf-8">
@@ -17,8 +32,7 @@
 		<!-- It's responsive -->
 		<!-- I'm using separate style sheets instead of one for better performance -->
 		<!-- and for some reason it makes more sense to me that they should be separate -->
-		<link rel="stylesheet" media="(max-width:1025px)" href="iPhone.css"/>
-		<link rel="stylesheet" media="(min-width:1025px)" href="browser.css"/>
+		<link rel="stylesheet" href="style.css"/>
 
 
 		<!-- Typed.js for that sexy typing animation. http://www.mattboldt.com/demos/typed-js/ -->
@@ -50,7 +64,7 @@
 	<!--Here's the body! This is where all the art and design happens-->
 	<body>
 	
-		<a href="#banner"><div id="eyeballDiv"><img src="home1.svg" id="eyeballImg"/></div></a>
+		<a href="#banner"><div id="eyeballDiv"><img src="home1.png" id="eyeballImg"/></div></a>
 
 		<div id="banner">
 			<h1>Ryan is a designer.<br /> He can build 
