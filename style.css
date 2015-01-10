@@ -62,7 +62,11 @@ h3 {
 
 a {
 	color: #0000FF;
-	text-decoration: none
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 3	px solid;
 }
 
 .typed {
@@ -136,7 +140,7 @@ figcaption {
 
 #even {
 	clear:left;
-	padding-left: 15vw;
+	padding-left: 10vw;
 }
 
 #odd {
@@ -149,21 +153,25 @@ figcaption {
 	background: url(stripes.svg); 
 }
 
-#eyeballDiv
+/*#eyeballDiv
 {
 	position:fixed;
-	background-color:rgba(255,255,255,.93);
+	background-color:rgba(255,255,255,0);
 	left: 2.9em;
 	border-bottom-left-radius:5px;
 	border-bottom-right-radius:5px;
 	z-index: 2;
 	box-shadow: 10px 10px 20px rgba(0,0,0,.15);
-}
+}*/
 
 
 #eyeballImg
 {
-	mix-blend-mode: exclusion;
+	position:fixed;
+	background-color:rgba(255,255,255,0);
+	left:3vw;
+	top:3vw;
+	z-index: 2;	
 }
 
 #eyeballImgDown
