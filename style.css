@@ -33,14 +33,14 @@ h1 {
 }
 
 /*Not really as exciting as the other information*/
+/*Used for body text in the project pages*/
 h2 {
 	/* Apercu Mono */
 	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
 	padding-top:2.5em;
-	padding-left: 5em;
+	padding-left: 15vw;
 	padding-right: 12em;
 	padding-bottom: 2em;
-	/*font-family: 'Roboto', sans-serif;*/
 	font-weight: 400;
 	font-size: 2em;
 	color: rgba(0,0,0,.8);
@@ -54,19 +54,18 @@ h3 {
 	padding-left: 10em;
 	padding-right: 12em;
 	padding-bottom: 2em;
-	/*font-family: 'Roboto', sans-serif;*/
 	font-weight: 400;
 	font-size: 1em;
 	color: rgba(0,0,0,.8);
 }
 
 a {
-	color: #0000FF;
+	color: #388E3C;
 	text-decoration: none;
 }
 
 a:hover {
-	border-bottom: 3	px solid;
+	border-bottom: 3px solid;
 }
 
 .typed {
@@ -171,7 +170,8 @@ figcaption {
 	background-color:rgba(255,255,255,0);
 	left:3vw;
 	top:3vw;
-	z-index: 2;	
+	z-index: 2;
+	width: 6vw;	
 }
 
 #eyeballImgDown
