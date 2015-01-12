@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	bannerHeight = $("#banner").height() - 95;
+	console.log("banner height: " + bannerHeight + "px");
 	wh = $(window).height(),      						// Height of window (visible part).
 	wt = $(window).scrollTop(),
 	dh = $(document).height(),
@@ -14,31 +16,28 @@ $(document).ready(function(){
 	},
 
 	draw = function(){
-		if (wt > 550) {
+		if (wt > bannerHeight) {
 			console.log("should be green")
 			if(eDAlpha<.11){
 				document.getElementById("eyeballImg").src="home2green.svg";
 			} else {
 				document.getElementById("eyeballImg").src="home1green.svg";
-			}	
+			}
+			$("#name").css("display","inline");
 		} else {
 			if(eDAlpha<.11){
 				document.getElementById("eyeballImg").src="home2.svg";
 			} else {
 				document.getElementById("eyeballImg").src="home1.svg";
 			}
+			$("#name").css("display","none");
 		}
 			
 	},
 
 	deBug = function(){
 																//Debugging tools
-  // 	console.log('window height: '+ wh);
-     	console.log('window scrollTop: ' + wt);
-     	console.log(url);
-  //   	console.log('eDAlpha: ' + eDAlpha);
-  //   	console.log('document height: ' + dh );
-  //   	console.log($('#eyeballImg').css("-webkit-filter"));
+	console.log("wt: " + wt);
 	}
 
 
@@ -50,14 +49,6 @@ $(document).ready(function(){
 		readHeight();
 		draw();
 		deBug();
-		 // if (wt==0){
- 		// 	document.getElementById("eyeballImg").src="home3.svg";
- 		// 	document.getElementById("icon").href="index.html";
- 		// 	console.log(wt);
- 		// 	} else {
- 		// 	document.getElementById("icon").href="#banner";
- 		// 	console.log($("#icon").css("href"));	
- 		// 	}
 	});
 
 	/*Scrollto*/
