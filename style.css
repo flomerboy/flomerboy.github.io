@@ -152,18 +152,6 @@ figcaption {
 	background: url(stripes.svg); 
 }
 
-/*#eyeballDiv
-{
-	position:fixed;
-	background-color:rgba(255,255,255,0);
-	left: 2.9em;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;
-	z-index: 2;
-	box-shadow: 10px 10px 20px rgba(0,0,0,.15);
-}*/
-
-
 #eyeballImg
 {
 	position:fixed;

@@ -5,9 +5,7 @@ $(document).ready(function(){
 	dh = $(document).height(),
 	eDDAlpha = wt/(dh-wh)*.4 + .1, 						//this value starts low and ends high
 	eDAlpha = (1 - wt/(dh-wh))*.4 + .1,					//this value starts high and ends low
-	eDhover = 0,										//this variable stores whether or not the div has the mouse above it. 
-	eDDhover = 0,										//0 = not lifted 2 = lifted. I increment it whenever the mouse enters, 
-														//and subtract whever the mouse leaves.
+
 	readHeight = function(){
 		wh = $(window).height(),      					// Height of window (visible part).
 		wt = $(window).scrollTop(),
@@ -17,65 +15,60 @@ $(document).ready(function(){
 	},
 
 	draw = function(){
-		$('#eyeballDiv').css({
-			'box-shadow': (3+(20*eDDAlpha)) + 'px 3px ' + (14 + (20*eDDAlpha)) + 'px rgba(0,0,0,' + (.10+eDDAlpha/1.5) + ')',
-			'left': 2.3 + eDAlpha +'em'
-		});	
-
-		console.log(eDAlpha);
-		if(eDAlpha<.11){
-			document.getElementById("eyeballImg").src="home2.svg";
-		} else if (wt<.1) {
-			document.getElementById("eyeballImg").src="home3.svg";
-		} else {
-			document.getElementById("eyeballImg").src="home1.svg";
+		if (wt > 550) {
+			console.log("should be green")
+			if(eDAlpha<.11){
+				document.getElementById("eyeballImg").src="home2green.svg";
+			} else {
+				document.getElementById("eyeballImg").src="home1green.svg";
+			}	
+		} else{
+			if(eDAlpha<.11){
+				document.getElementById("eyeballImg").src="home2.svg";
+			} else {
+				document.getElementById("eyeballImg").src="home1.svg";
+			}
 		}
-			console.log('bottom');
-			
+		
+		if (wt<10){
+ 			document.getElementById("eyeballImg").src="home3.svg";
+	 			$('#eyeballImg').css({
+					'width': 6.2 +'vw'
+				});
+ 			document.getElementById("icon").href="index.html";
+ 			console.log(wt);
+ 			} else {
+ 				$('#eyeballImg').css({
+					'width': 6 +'vw'
+				});
+ 			document.getElementById("icon").href="#banner";
+ 			console.log($("#icon").css("href"));	
+ 			}	
 	},
 
 	deBug = function(){
-																//Debugging tools
+													//Debugging tools
   // 	console.log('window height: '+ wh);
-     	console.log('window scrollTop: ' + wt);
+  //   	console.log('window scrollTop: ' + wt);
   //   	console.log('eDAlpha: ' + eDAlpha);
   //   	console.log('eDDAlpha: ' + eDDAlpha);
   //   	console.log('document height: ' + dh );
   //   	console.log('darkness' + (.10+4*eDDAlpha));
   //   	console.log($('#eyeballImg').css("-webkit-filter"));
-	},
-
-	hover = function(){
-		if ($('#eyeballDiv').is(":hover")){
-			console.log(eDAlpha);
-			if (eDhover<.2){
-				eDhover+=.02;
-				eDAlpha= eDAlpha + eDhover;
-				console.log(eDAlpha);
-			}
-		}
 	}
 
 
-	
+
+	readHeight();
+	draw();
 
 	$(document).scroll(function(){
 		readHeight();
-		hover();
 		draw();
 		deBug();
-		 if (wt==0){
- 			document.getElementById("eyeballImg").src="home3.svg";
- 			document.getElementById("icon").href="index.html";
- 			console.log(wt);
- 			} else {
- 			document.getElementById("icon").href="#banner";
- 			console.log($("#icon").css("href"));	
- 			}
 	});
 
 	/*Scrollto*/
-
 
 // Click event for any anchor tag that's href starts with #
  $('a[href^="#"]').click(function(event) {
@@ -97,9 +90,7 @@ $(document).ready(function(){
     event.preventDefault();
  });
 
-		readHeight();
-		hover();
-		draw();
+
 
 });
 
