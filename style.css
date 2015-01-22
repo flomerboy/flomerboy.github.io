@@ -50,13 +50,14 @@ h2 {
 h3 {
 	/* Apercu Mono */
 	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
-	padding-top:2.5em;
-	padding-left: 10em;
+	padding-top:1em;
+	padding-left: 15vw;
 	padding-right: 12em;
 	padding-bottom: 2em;
 	font-weight: 400;
 	font-size: 1em;
 	color: rgba(0,0,0,.8);
+	max-width: 45vw;
 }
 
 a {
@@ -72,7 +73,7 @@ span:hover{
 	border-bottom: 0px;
 }
 
-.typed {
+a.typed {
 	box-shadow: 10px 10px 20px rgba(0,0,0,.15);
 	background-color: #FFFFFF;
 	border-radius: 5px;
@@ -105,6 +106,10 @@ figcaption {
 	color: rgba(0,0,0,.8);
 }
 
+em {
+	color:#FFFFFF;
+}
+
 .thumbnail
 {
 	border-radius:5px;
@@ -131,15 +136,6 @@ figcaption {
 	width: 100%;
 }
 
-#bio
-{
-/*	background: rgba(0,0,0,.03);*/
-	opacity:.9;
-	font-size: 1.2em;
-	padding-left: 3.8em;
-	margin-right: 20%;
-	padding-bottom: 2em;
-}
 
 #even {
 	clear:left;
@@ -170,6 +166,19 @@ figcaption {
 	position:fixed;
 	color:#4CAF50;
 	display:none;
+	z-index: -1;
+}
+
+#work{
+	padding-top: 15vw;
+}
+
+h2#blog{
+	color:#FFFFFF;
+}
+
+div#blog{
+	background-color:#4CAF50;
 }
 
 .board {
