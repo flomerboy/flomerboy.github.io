@@ -1,50 +1,62 @@
 $(document).ready(function(){
 
+	bannerHeight = $("#banner").height() - 62	;
+	console.log("banner height: " + bannerHeight + "px");
 	wh = $(window).height(),      						// Height of window (visible part).
 	wt = $(window).scrollTop(),
 	dh = $(document).height(),
-	eDDAlpha = wt/(dh-wh)*.4 + .1, 						//this value starts low and ends high
 	eDAlpha = (1 - wt/(dh-wh))*.4 + .1,					//this value starts high and ends low
+	eDhover = 0,				//this value starts high and ends low
 
 	readHeight = function(){
 		wh = $(window).height(),      					// Height of window (visible part).
 		wt = $(window).scrollTop(),
 		dh = $(document).height(),
-    	// eDDAlpha = wt/(dh-wh)*.4 + .1, 					//this value starts low and ends high
     	eDAlpha = (1 - wt/(dh-wh))*.4 + .1;				//this value starts high and ends low
 	},
 
 	draw = function(){
-		if (wt > 550) {
-			console.log("should be green")
-			if(eDAlpha<.11){
-				document.getElementById("eyeballImg").src="home2green.svg";
-			} else {
-				document.getElementById("eyeballImg").src="home1green.svg";
-			}	
+		if (wt > bannerHeight) {
+			console.log("should be green");
+			// if(eDAlpha<.11){
+			// 	document.getElementById("eyeballImg").src="home2green.svg";
+			// } else {
+			// 	document.getElementById("eyeballImg").src="home1green.svg";
+			// }	
+			$("#name").css("display","inline");
+			$(".nav").css("background-color","#4CAF50");
+			document.getElementById("home").href="#banner";
+			document.getElementById('name').innerHTML = 'up';
+			
 		} else{
-			if(eDAlpha<.11){
-				document.getElementById("eyeballImg").src="home2.svg";
-			} else {
-				document.getElementById("eyeballImg").src="home1.svg";
-			}
+			// if(eDAlpha<.11){
+			// 	document.getElementById("eyeballImg").src="home2.svg";
+			// } else {
+			// 	document.getElementById("eyeballImg").src="home1.svg";
+			// }
+			$("#name").css("display","inline"); //I actually want "home" to display all the time.
+			$(".nav").css("background-color","rgba(0,0,0,0)");
+			document.getElementById("home").href="index.html";
+			document.getElementById("name").innerHTML = 'back';
+			console.log("no nav");
 		}
+	}
 		
 		if (wt<10){
- 			document.getElementById("eyeballImg").src="home3.svg";
-	 			$('#eyeballImg').css({
-					'width': 6.2 +'vw'
-				});
- 			document.getElementById("icon").href="index.html";
- 			console.log(wt);
- 			} else {
- 				$('#eyeballImg').css({
-					'width': 6 +'vw'
-				});
- 			document.getElementById("icon").href="#banner";
- 			console.log($("#icon").css("href"));	
- 			}	
-	},
+ 			// document.getElementById("eyeballImg").src="home3.svg";
+	 		// 	$('#eyeballImg').css({
+				// 	'width': 6.2 +'vw'
+				// });
+ 			 
+ 			// console.log(wt);
+ 			 } else {
+ 			// 	$('#eyeballImg').css({
+				// 	'width': 6 +'vw'
+				// });
+ 			 document.getElementById("name").href="#banner";
+ 			// console.log($("#icon").css("href"));	
+ 			// }	
+	}
 
 	deBug = function(){
 													//Debugging tools
@@ -90,10 +102,7 @@ $(document).ready(function(){
     event.preventDefault();
  });
 
-
-
 });
-
 
 
 
