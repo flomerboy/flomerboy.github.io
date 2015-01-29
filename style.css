@@ -58,11 +58,13 @@ h3 {
 	font-size: 1em;
 	color: rgba(0,0,0,.8);
 	max-width: 45vw;
+	margin:0px;
 }
 
 a {
 	color: #388E3C;
 	text-decoration: none;
+	padding-top:1vw;
 }
 
 a:hover {
@@ -109,6 +111,13 @@ figcaption {
 em {
 	color:#FFFFFF;
 }
+
+/*div.nav {
+	padding:1vw;
+	background-color:#4CAF50;
+	position: fixed;
+}*/
+
 
 .thumbnail
 {
@@ -158,7 +167,13 @@ em {
 
 #banner
 {
-	background: url(stripes.svg); 
+	/*background: url(stripes.svg); */
+	background: #4caf50; /* Old browsers */
+background: -moz-linear-gradient(top, #4caf50 0%, #3e8e42 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4caf50), color-stop(100%,#3e8e42)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
+
 }
 
 #eyeballImg {
@@ -173,10 +188,24 @@ em {
 #name
 {
 	position:fixed;
-	color:#4CAF50;
+	color:#FFFFFF;
 	display:none;
 	z-index: -1;
+	font-size: 1.25em;
+	padding-left: 5vw;
+
 }
+
+.nav {
+	position:fixed;
+	width:100%;
+	background-color:#4CAF50;
+	opacity:.85;
+	height:5vw;
+}
+
+
+
 
 #work{
 	padding-top: 15vw;

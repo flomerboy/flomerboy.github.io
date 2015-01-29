@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	bannerHeight = $("#banner").height() - 95	;
+	bannerHeight = $("#banner").height() - 62	;
 	console.log("banner height: " + bannerHeight + "px");
 	wh = $(window).height(),      						// Height of window (visible part).
 	wt = $(window).scrollTop(),
@@ -17,20 +17,22 @@ $(document).ready(function(){
 
 	draw = function(){
 		if (wt > bannerHeight) {
-			console.log("should be green")
-			if(eDAlpha<.11){
-				document.getElementById("eyeballImg").src="home2green.svg";
-			} else {
-				document.getElementById("eyeballImg").src="home1green.svg";
-			}
+			// console.log("should be green")
+			// if(eDAlpha<.11){
+			// 	document.getElementById("eyeballImg").src="home2green.svg";
+			// } else {
+			// 	document.getElementById("eyeballImg").src="home1green.svg";
+			// }
 			$("#name").css("display","inline");
+			$(".nav").css("display","inline");
 		} else {
-			if(eDAlpha<.11){
-				document.getElementById("eyeballImg").src="home2.svg";
-			} else {
-				document.getElementById("eyeballImg").src="home1.svg";
-			}
+			// if(eDAlpha<.11){
+			// 	document.getElementById("eyeballImg").src="home2.svg";
+			// } else {
+			// 	document.getElementById("eyeballImg").src="home1.svg";
+			// }
 			$("#name").css("display","none");
+			$(".nav").css("display","none");
 		}
 			
 	},
