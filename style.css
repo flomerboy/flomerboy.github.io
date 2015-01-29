@@ -126,6 +126,7 @@ em {
 	-moz-box-shadow: 15px 15px 15px 0px  rgba(0,0,0,0.05);
 	box-shadow: 15px 15px 15px 0px  rgba(0,0,0,0.05);
 	transition: box-shadow .5s;
+	max-width: 375px;
 }
 
 .thumbnail:hover{
@@ -176,14 +177,6 @@ background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
 
 }
 
-#eyeballImg {
-	position:fixed;
-	background-color:rgba(255,255,255,0);
-	left:3.5vw;
-	top:3.5vw;
-	z-index: 2;
-	width: 6vw;
-}
 
 #name
 {
