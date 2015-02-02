@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<!-- The personal website of Ryan Flomerfelt Mather -->
+<!-- He built this from the ground up - vanilla -->
+
+	<head>
+		<meta charset="utf-8">
+		<title>Ryan Can Build Things</title>
+		<meta name="description" content="Ryan is a person who can build things.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="author" content="Ryan Mather">
+		<meta name="keyword" content="Graphic Designer, Industrial Designer, Branding, Industrial Design, Graphic Design, User Experience, RISD, Polymaker">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+		<script src="scriptGlobal.js"></script>
+
+
+		<!-- It's responsive -->
+		<!-- I'm using separate style sheets instead of one for better performance -->
+		<!-- and it makes more sense to me that they should be separate -->
+		<link rel="stylesheet" href="style.css"/>
+
+
+		<!-- Typed.js for that sexy typing animation. http://www.mattboldt.com/demos/typed-js/ -->
+		<script src="typed.js"></script>
+		<script>
+			$(function(){
+				$("span").typed({
+					strings: ["a club."],
+					typeSpeed: 65,
+					loop: false
+				});
+			});
+		</script>
+
+		<!-- Google Analytics! -->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-43273200-2', 'auto');
+		ga('send', 'pageview');
+
+		</script>
+
+	</head>
+
+	<!--Here's the body! This is where all the art and design happens-->
+	<body>
+
+		<div class="nav"><a id="home" href="#banner"><h3 id="name">home</h3></a></div>	
+
+		<div id="banner">
+			<h1>Ryan can build 
+			<a class="typed"><span></span></a><br />
+			</h1>
+		</div>
+
+		<div class="bukkit">
+			<h2>polymaker re-branding</h2>
+			<h3>branding, layout, typography, market research</h3>
+		</div>
+
+		<div class="bukkit">
+			<h3>
+			In the summer of 2014 I was hired to re-design the branding for polymaker. Although we're still in the early phases of implementing, here is what I arrived at. Full .pdf available <a href="http://issuu.com/flomerboy/docs/ryan_s_final">here</a>.
+			</h3>
+		</div>
+
+
+		
+	</body>
+
+</html>
