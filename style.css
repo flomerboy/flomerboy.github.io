@@ -224,7 +224,7 @@ div#bio.bukkit {
 }
 
 .photo {
-	width:525px;
+	max-width:525px;
 }
 
 /*
