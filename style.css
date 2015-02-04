@@ -237,10 +237,15 @@ ___       __        ___ ___
 /* Small Devices, Tablets */
     @media only screen and (max-width : 1024px) {
 
+    	h1{
+ 			padding-left: 15vw;
+		}
+
     	.project{
 			text-align: center;
 			clear:left;
-			padding:15px;
+			margin-top:30px;
+			margin-bottom: 30px;
 			margin:auto;
 			float:none;
 		}
