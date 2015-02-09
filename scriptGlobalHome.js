@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	bannerHeight = $("#banner").height() - 62	;
+	bannerHeight = $("#banner").height() - 62	; // This makes sure that it finds out the height of the banner when the page loads, so that on different size monitors it still switches at the right time.
 	console.log("banner height: " + bannerHeight + "px");
 	wh = $(window).height(),      						// Height of window (visible part).
 	wt = $(window).scrollTop(),

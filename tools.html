@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<!-- The personal website of Ryan Flomerfelt Mather -->
+<!-- He built this from the ground up - vanilla -->
+
+	<head>
+		<meta charset="utf-8">
+		<title>Ryan Can Build Things</title>
+		<meta name="description" content="Ryan is a person who can build things.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="author" content="Ryan Mather">
+		<meta name="keyword" content="Graphic Designer, Industrial Designer, Branding, Industrial Design, Graphic Design, User Experience, RISD, Polymaker">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/scripts/retina.js"></script>
+
+		<script src="scriptGlobal.js"></script>
+
+<!-- font magic -->
+<script type="text/javascript">
+WebFontConfig = { fontdeck: { id: '50837' } };
+
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();
+</script>
+
+
+		<!-- It's responsive -->
+		<!-- I'm using separate style sheets instead of one for better performance -->
+		<!-- and it makes more sense to me that they should be separate -->
+		<link rel="stylesheet" href="style.css"/>
+
+
+		<!-- Typed.js for that sexy typing animation. http://www.mattboldt.com/demos/typed-js/ -->
+		<script src="typed.js"></script>
+		<script>
+			$(function(){
+				$("span").typed({
+					strings: ["tools."],
+					typeSpeed: 65,
+					loop: false
+				});
+			});
+		</script>
+
+		<!-- Google Analytics! -->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-43273200-2', 'auto');
+		ga('send', 'pageview');
+
+		</script>
+
+	</head>
+
+	<!--Here's the body! This is where all the art and design happens-->
+	<body>
+
+		<div class="nav"><a id="home" href="#banner"><h3 id="name">home</h3></a></div>	
+
+		<div id="banner">
+			<h1>Ryan uses 
+			<a class="typed"><span></span></a><br />
+			</h1>
+		</div>
+
+
+		<div class="bukkit">
+			<h3> I'm using this space to document all the tools I do and don't use. Not all of these definitions make a ton of sense, or are 100% clear, but I think it's good to keep track and be critical of my process.</h3>
+		</div>
+
+		
+		<div class="bukkit">
+			<h3> Design:</h3>
+			<ul>
+				<li>Illustrator: For making icons, illustrations, compositions</li>
+				<li>Sketch: For making UIs and literally nothing else</li>
+				<li>Form: For prototyping motion of elements in a UI</li>
+				<li>InDesign: For multi-page print stuff or posters</li>
+				<li>Photoshop: For editing large amounts of pixels to deceive humans</li>
+			</ul>
+			<h3> Web Dev:</h3>
+			<ul>
+				<li>Sublime Text 2: Text Editor</li>
+				<li>Ionic: Lets me make native apps with web dev stack.</li>
+				<li>HTML/CSS/Javascript: static webpages</li>
+				<li>Angular.js: Front end data presentation for dynamic web apps, extends HTML</li>
+				<li>Node.js: Server-side data moving</li>
+				<li>Homebrew: Install packages (like npm)</li>
+				<li></li>
+			</ul>
+
+
+		</div>
+
+
+		
+	</body>
+
+</html>
