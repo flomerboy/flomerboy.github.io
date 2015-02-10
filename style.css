@@ -36,8 +36,7 @@ h1 {
 /*Used for body text in the project pages*/
 h2 {
 	/* Apercu Mono */
-	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
-	padding-top:2.5em;
+	font-family:"Apercu Regular", Calibri, sans-serif; font-size-adjust:0.5; font-weight:normal; font-style:normal;
 	padding-left: 15vw;
 	padding-right: 12em;
 	/*padding-bottom: 2em;*/
@@ -194,7 +193,7 @@ background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
 	width:100%;
 	background-color:#4CAF50;
 	opacity:.85;
-	height:9vh;
+	height:60px;
 }
 
 
@@ -353,7 +352,7 @@ ___       __        ___ ___
 		}
 
 		.nav {
-		height:12vh;
+		height:60px;
 		}
 
     }

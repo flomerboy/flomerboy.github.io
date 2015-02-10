@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	bannerHeight = $("#banner").height() - 62	;
+	bannerHeight = $("#banner").height() *2;
 	console.log("banner height: " + bannerHeight + "px");
 	wh = $(window).height(),      						// Height of window (visible part).
 	wt = $(window).scrollTop(),
