@@ -196,7 +196,10 @@ background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
 	height:60px;
 }
 
-
+#blog {
+	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
+	padding-top: 2.5em;
+}
 
 
 #work{
