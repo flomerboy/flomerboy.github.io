@@ -229,6 +229,11 @@ div#bio.bukkit {
 	max-width:550px;
 }
 
+i {
+	padding-top: 10px;
+	color:rgba(0,0,0,.4);
+}
+
 /*
 ___       __        ___ ___        
  |   /\  |__) |    |__   |         
