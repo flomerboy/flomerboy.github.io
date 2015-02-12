@@ -208,7 +208,13 @@ background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
 
 
 #work{
-	padding-top: 15vw;
+	padding-top: 10vw;
+}
+
+#workTitle{
+	text-align: center;
+	padding:15px;
+	float:none;
 }
 
 h2#blog{
@@ -237,6 +243,10 @@ div#bio.bukkit {
 i {
 	padding-top: 10px;
 	color:rgba(0,0,0,.4);
+}
+
+#description{
+	margin-top:100px;
 }
 
 /*
