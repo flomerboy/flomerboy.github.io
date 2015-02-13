@@ -5,7 +5,6 @@ html, div, figure, figcaption {
 	overflow-x: hidden;
 }
 
-
 /*
  __   __   __        __   ___  __  
 |__) |__) /  \ |  | /__` |__  |__) 
@@ -16,8 +15,85 @@ html, div, figure, figcaption {
 /*Thanks Google, for all of these weights of Roboto*/
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic|Roboto+Slab:400,700);
+/*
+ ,ggggggggggggggg                            
+dP""""""88"""""""                            
+Yb,_    88                                   
+ `""    88                                   
+        88                                   
+        88    ,gggg,gg    ,gggg,gg    ,g,    
+        88   dP"  "Y8I   dP"  "Y8I   ,8'8,   
+  gg,   88  i8'    ,8I  i8'    ,8I  ,8'  Yb  
+   "Yb,,8P ,d8,   ,d8b,,d8,   ,d8I ,8'_   8) 
+     "Y8P' P"Y8888P"`Y8P"Y8888P"888P' "YY8P8P
+                              ,d8I'          
+                            ,dP'8I           
+                           ,8"  8I           
+                           I8   8I           
+                           `8, ,8I           
+                            `Y8P"    */
+
 
 /*Some exciting information*/
+
+a {
+	color: #388E3C;
+	text-decoration: none;
+	padding-top:1vw;
+}
+
+a:hover {
+	border-bottom: 3px solid;
+}
+
+a.typed {
+	box-shadow: 10px 10px 20px rgba(0,0,0,.15);
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding-right:.25em;
+	padding-left:.25em;
+	padding-bottom: .15em;
+	color: #000000;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	background-color: rgba(0,0,0,.015);
+	width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+div#bio.bukkit {
+	margin-top: 4em;
+	background: url(stripes2.svg);
+	padding-bottom: 5vw;
+}
+
+div#blog{
+	background-color:#4CAF50;
+	padding-top: 0vw;
+}
+
+em {
+	color:#FFFFFF;
+}
+
+figure {
+	padding: 1.5em;
+}
+
+figcaption {
+	text-align: center;
+	/* Apercu Mono */
+	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
+	/*font-family: 'Roboto', sans-serif;*/
+	font-weight: 400;
+	font-size: 1em;
+	color: rgba(0,0,0,.8);
+}
+
 h1 {
 	/* Apercu */
 	font-family:"Apercu Regular", Calibri, sans-serif; font-size-adjust:0.508; font-weight:normal; font-style:normal;	
@@ -47,6 +123,10 @@ h2 {
 	line-height: 140%;
 }
 
+h2#blog{
+	color:#FFFFFF;
+}
+
 h3 {
 	/* Apercu Mono */
 	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
@@ -61,67 +141,52 @@ h3 {
 	margin:0px;
 }
 
-a {
-	color: #388E3C;
-	text-decoration: none;
-	padding-top:1vw;
-}
-
-a:hover {
-	border-bottom: 3px solid;
-}
-
-.typed:hover {
-	text-decoration: none;
+i {
+	padding-top: 10px;
+	color:rgba(0,0,0,.4);
 }
 
 span:hover{
 	border-bottom: 0px;
 }
 
-a.typed {
-	box-shadow: 10px 10px 20px rgba(0,0,0,.15);
-	background-color: #FFFFFF;
-	border-radius: 5px;
-	padding-right:.25em;
-	padding-left:.25em;
-	padding-bottom: .15em;
-	color: #000000;
-}
+/*   ,gggg,                                                            
+   ,88"""Y8b, ,dPYb,                                                   
+  d8"     `Y8 IP'`Yb                                                   
+ d8'   8b  d8 I8  8I                                                   
+,8I    "Y88P' I8  8'                                                   
+I8'           I8 dP    ,gggg,gg    ,g,       ,g,      ,ggg,     ,g,    
+d8            I8dP    dP"  "Y8I   ,8'8,     ,8'8,    i8" "8i   ,8'8,   
+Y8,           I8P    i8'    ,8I  ,8'  Yb   ,8'  Yb   I8, ,8I  ,8'  Yb  
+`Yba,,_____, ,d8b,_ ,d8,   ,d8b,,8'_   8) ,8'_   8)  `YbadP' ,8'_   8) 
+  `"Y8888888 8P'"Y88P"Y8888P"`Y8P' "YY8P8PP' "YY8P8P888P"Y888P' "YY8P8P */
 
-body {
-	margin:0px;
-	padding:0px;
-	background-color: rgba(0,0,0,.015);
+
+/*bukkits are for holding things in*/
+.bukkit{
+	clear:left;
 	width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+	padding-bottom:5vw;
+	padding-top:5vw;
 }
 
-figure {
-	padding: 1.5em;
-}
-
-figcaption {
-	text-align: center;
-	/* Apercu Mono */
-	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
-	/*font-family: 'Roboto', sans-serif;*/
-	font-weight: 400;
-	font-size: 1em;
-	color: rgba(0,0,0,.8);
-}
-
-em {
-	color:#FFFFFF;
-}
-
-/*div.nav {
-	padding:1vw;
+.nav {
+	position:fixed;
+	width:100%;
 	background-color:#4CAF50;
-	position: fixed;
-}*/
+	opacity:.85;
+	height:60px;
+}
 
+.photo {
+	max-width:550px;
+}
+
+.project {
+	padding: 5%;
+	padding-bottom: 5%;
+	float:left;
+}
 
 .thumbnail
 {
@@ -145,42 +210,52 @@ em {
 	box-shadow: 25px 25px 15px 0px rgba(0,0,0,0.01);
 }
 
-.project {
-	padding: 5%;
-	padding-bottom: 5%;
-	float:left;
+.typed:hover {
+	text-decoration: none;
 }
 
-/*bukkits are for holding things in*/
-.bukkit{
-	clear:left;
-	width: 100%;
-	padding-bottom:5vw;
-	padding-top:5vw;
+
+
+
+
+
+/*
+      ,a8a,  ,gggggggggggg,             
+     ,8" "8,dP"""88""""""Y8b,           
+     d8   8bYb,  88       `8b,          
+     88   88 `"  88        `8b          
+     88   88     88         Y8          
+     Y8   8P     88         d8   ,g,    
+     `8, ,8'     88        ,8P  ,8'8,   
+8888  "8,8"      88       ,8P' ,8'  Yb  
+`8b,  ,d8b,      88______,dP' ,8'_   8) 
+  "Y88P" "Y8    888888888P"   P' "YY8P8P
+
+*/
+
+#banner
+{
+
+background: #4caf50; /* Old browsers */
+background: -moz-linear-gradient(top, #4caf50 0%, #3e8e42 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4caf50), color-stop(100%,#3e8e42)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
 }
 
+#blog {
+	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
+	padding-top: 2.5em;
+}
+
+#description{
+	margin-top:100px;
+}
 
 #even {
 	clear:left;
 	padding-left: 10vw;
 }
-
-#odd {
-	clear:left;
-	padding-left: 15vw;
-}
-
-#banner
-{
-	/*background: url(stripes.svg); */
-	background: #4caf50; /* Old browsers */
-background: -moz-linear-gradient(top, #4caf50 0%, #3e8e42 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4caf50), color-stop(100%,#3e8e42)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
-
-}
-
 
 #name
 {
@@ -190,22 +265,12 @@ background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
 	z-index: -1;
 	font-size: 1.25em;
 	padding-left: 5vw;
-
 }
 
-.nav {
-	position:fixed;
-	width:100%;
-	background-color:#4CAF50;
-	opacity:.85;
-	height:60px;
+#odd {
+	clear:left;
+	padding-left: 15vw;
 }
-
-#blog {
-	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
-	padding-top: 2.5em;
-}
-
 
 #work{
 	padding-top: 10vw;
@@ -217,37 +282,11 @@ background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
 	float:none;
 }
 
-h2#blog{
-	color:#FFFFFF;
-}
 
-div#blog{
-	background-color:#4CAF50;
-	padding-top: 0vw;
-}
 
-.board {
-	width: 90%;
-}
 
-div#bio.bukkit {
-	margin-top: 4em;
-	background: url(stripes2.svg);
-	padding-bottom: 5vw;
-}
 
-.photo {
-	max-width:550px;
-}
 
-i {
-	padding-top: 10px;
-	color:rgba(0,0,0,.4);
-}
-
-#description{
-	margin-top:100px;
-}
 
 /*
 ___       __        ___ ___        
