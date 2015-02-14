@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	bannerHeight = $("#banner").height() *2;
+	bannerHeight = $("div.bukkit#banner").height() + 50;
 	console.log("banner height: " + bannerHeight + "px");
 	wh = $(window).height(),      						// Height of window (visible part).
 	wt = $(window).scrollTop(),
@@ -35,7 +35,7 @@ $(document).ready(function(){
 			// 	document.getElementById("eyeballImg").src="home1.svg";
 			// }
 			$("#name").css("display","inline"); //I actually want "home" to display all the time.
-			$(".nav").css("background-color","rgba(0,0,0,0)");
+			$(".nav").css("background-color","#4CAF50");
 			document.getElementById("home").href="index.html";
 			document.getElementById("name").innerHTML = 'back';
 			console.log("no nav");
@@ -78,6 +78,14 @@ $(document).ready(function(){
 		readHeight();
 		draw();
 		deBug();
+	});
+
+	$('.adaptive-height').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 1,
+	  adaptiveHeight: true
 	});
 
 	/*Scrollto*/

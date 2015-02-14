@@ -1,8 +1,8 @@
 /*html and body reset to kill that gross border that tries to be there by default*/
-html, div, figure, figcaption {
+html, div, figure, figcaption, iframe {
 	margin:0px;
-	padding:0px;
-	overflow-x: hidden;
+	padding:0px;/*
+	overflow-x: hidden;*/
 }
 
 /*
@@ -84,6 +84,10 @@ figure {
 	padding: 1.5em;
 }
 
+figure.carousel{
+	padding-left:15vw;
+}
+
 figcaption {
 	text-align: center;
 	/* Apercu Mono */
@@ -94,10 +98,22 @@ figcaption {
 	color: rgba(0,0,0,.8);
 }
 
+figcaption.carousel{
+	/* Apercu Mono */
+	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
+	/*font-family: 'Roboto', sans-serif;*/
+	font-weight: 400;
+	font-size: 1em;
+	color: rgba(0,0,0,.4);
+	padding:none;
+	margin: none;
+	text-align: left;
+}
+
 h1 {
 	/* Apercu */
 	font-family:"Apercu Regular", Calibri, sans-serif; font-size-adjust:0.508; font-weight:normal; font-style:normal;	
-	font-size: 6.5vw;
+	font-size: 14vh;
 	margin-top: 0px;
 	padding-top: 25vh;
 	padding-bottom: 25vh;
@@ -106,6 +122,21 @@ h1 {
 	font-weight: 400;
 	color: #FFFFFF;
 	line-height: 160%;
+	margin-bottom:0px;
+}
+
+h1.projectTitle {
+	/* Apercu */
+	font-family:"Apercu Regular", Calibri, sans-serif; font-size-adjust:0.508; font-weight:normal; font-style:normal;	
+	font-size: 8vh;
+	margin-top: 0px;
+	padding-top: 11vh;
+	padding-bottom: 0vh;
+	padding-left: 15vw;
+	/*font-family: 'Roboto', sans-serif;*/
+	font-weight: 400;
+	color: #4caf50;
+	line-height: 100%;
 }
 
 /*Not really as exciting as the other information*/
@@ -119,7 +150,6 @@ h2 {
 	font-weight: 400;
 	font-size: 2em;
 	color: rgba(0,0,0,.8);
-	margin: 0;
 	line-height: 140%;
 }
 
@@ -141,9 +171,42 @@ h3 {
 	margin:0px;
 }
 
+h3.projectDescription {
+	padding-bottom: 2.5vh;
+}
+
+h3#lastUpdated {
+	color:#FFFFFF;
+	font-size: .75em;
+	padding-left: 5vw;
+	padding-top:7.5px;
+}
+
+h3.subtle{
+	color:rgba(0,0,0,.4);
+	padding-bottom: 1em;
+}
+
+h4{
+	padding-left: 15vw;
+}
+
 i {
 	padding-top: 10px;
 	color:rgba(0,0,0,.4);
+}
+
+img.carousel{	
+	width:50vw;
+}
+
+li.spaced {
+	max-width: 45vw;
+	padding-bottom:1em;
+}
+
+li {
+	max-width: 45vw;
 }
 
 span:hover{
@@ -166,8 +229,8 @@ Y8,           I8P    i8'    ,8I  ,8'  Yb   ,8'  Yb   I8, ,8I  ,8'  Yb
 .bukkit{
 	clear:left;
 	width: 100%;
-	padding-bottom:5vw;
-	padding-top:5vw;
+	padding-bottom:5vh;
+	padding-top:5vh;
 }
 
 .nav {
@@ -175,16 +238,23 @@ Y8,           I8P    i8'    ,8I  ,8'  Yb   ,8'  Yb   I8, ,8I  ,8'  Yb
 	width:100%;
 	background-color:#4CAF50;
 	opacity:.85;
-	height:60px;
+	height:45px;
+}
+
+.footer {
+	width:100%;
+	background-color:#4CAF50;
+	height:30px;
+	margin-top: 10vh;
 }
 
 .photo {
 	max-width:550px;
+	padding-left:15vw;
 }
 
 .project {
 	padding: 5%;
-	padding-bottom: 5%;
 	float:left;
 }
 
@@ -215,10 +285,6 @@ Y8,           I8P    i8'    ,8I  ,8'  Yb   ,8'  Yb   I8, ,8I  ,8'  Yb
 }
 
 
-
-
-
-
 /*
       ,a8a,  ,gggggggggggg,             
      ,8" "8,dP"""88""""""Y8b,           
@@ -236,6 +302,10 @@ Y8,           I8P    i8'    ,8I  ,8'  Yb   ,8'  Yb   I8, ,8I  ,8'  Yb
 #banner
 {
 
+}
+
+.home#banner
+{
 background: #4caf50; /* Old browsers */
 background: -moz-linear-gradient(top, #4caf50 0%, #3e8e42 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4caf50), color-stop(100%,#3e8e42)); /* Chrome,Safari4+ */
@@ -243,13 +313,11 @@ background: -webkit-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Chrome10+,
 background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
 }
 
-#blog {
-	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
-	padding-top: 2.5em;
-}
 
-#description{
-	margin-top:100px;
+
+h2#blog {
+	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
+	padding-top: 5vh;
 }
 
 #even {
@@ -265,6 +333,7 @@ background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
 	z-index: -1;
 	font-size: 1.25em;
 	padding-left: 5vw;
+	padding-top:10px;
 }
 
 #odd {
@@ -277,16 +346,10 @@ background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
 }
 
 #workTitle{
-	text-align: center;
-	padding:15px;
+	
 	float:none;
+	padding-left: 12vw;
 }
-
-
-
-
-
-
 
 /*
 ___       __        ___ ___        
@@ -309,6 +372,10 @@ ___       __        ___ ___
 			margin-bottom: 30px;
 			margin:auto;
 			float:none;
+		}
+
+		iframe {
+		max-width:80vw;
 		}
 
 		#even{
@@ -370,6 +437,9 @@ ___       __        ___ ___
 			padding-right: 0px;
 		}
 
+		iframe {
+		max-width:80vw;
+		}
 
 		.project{
 			text-align: center;
@@ -413,9 +483,11 @@ ___       __        ___ ___
 		max-width:80vw;
 		}
 
+
 		.nav {
 		height:60px;
 		}
+
 
     }
 /*

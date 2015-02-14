@@ -10,12 +10,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="author" content="Ryan Mather">
 		<meta name="keyword" content="Graphic Designer, Industrial Designer, Branding, Industrial Design, Graphic Design, User Experience, RISD, Polymaker">
+
+
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+		<!-- Slick.js -->
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+
 		<script type="text/javascript" src="/scripts/retina.js"></script>
 
 		<script src="scriptGlobal.js"></script>
 
+
+		<!-- CSS -->	
+
+		<link rel="stylesheet" href="style.css"/>
+
+
+		<!-- Slick CSS -->
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
+
 <!-- font magic -->
+
+
 <script type="text/javascript">
 WebFontConfig = { fontdeck: { id: '50837' } };
 
@@ -29,12 +49,6 @@ WebFontConfig = { fontdeck: { id: '50837' } };
   s.parentNode.insertBefore(wf, s);
 })();
 </script>
-
-		<!-- It's responsive -->
-		<!-- I'm using separate style sheets instead of one for better performance -->
-		<!-- and it makes more sense to me that they should be separate -->
-		<link rel="stylesheet" href="style.css"/>
-
 
 		<!-- Typed.js for that sexy typing animation. http://www.mattboldt.com/demos/typed-js/ -->
 		<script src="typed.js"></script>
@@ -68,77 +82,111 @@ WebFontConfig = { fontdeck: { id: '50837' } };
 		<div class="nav"><a id="home" href="#banner"><h3 id="name">home</h3></a></div>	
 
 		<div class="bukkit" id="banner">
-			<h1>my body band</h1>
-			<h3>product design, experience design, education design</h3>
+			<h1 class="projectTitle">my body band</h1>
+			<h3 class="projectDescription">product design, experience design, education design</h3>
 		</div>
 
 
-		<div class="bukkit">
 			<h2>
-				<iframe src="https://player.vimeo.com/video/111134331" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+				<iframe src="https://player.vimeo.com/video/111134331?title=0&byline=0&portrait=0" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			</h2>
-		</div>
 
+		
 		<div class="bukkit">
+			<h3 class="subtle">Goal:</h3>
 			<h2 id="description">
 			Design a <a href="http://en.wikipedia.org/wiki/Constructivism_(philosophy_of_education)">contructivist </a>(a.k.a. learned in context) and <a href="http://playeverything.wordpress.com/play-and-playwork/play-types/">playful</a> way to learn anatomy.</h2>
 			<br />
 		</div>
 
-		<div class="bukkit">
-			<h3>
-			In this partnered project with Erik Lack and Ben Basseches, we devised a suit that teaches children anatomy through a series of playful songs. 
-			</h3>
+		<div class="adaptive-height">
+ 			<div>
+ 				<figure class="carousel">
+ 					<img class="carousel" src ="erikUpdates/2.jpg"/>
+ 					<figcaption class="carousel">Petra in motion</figcaption>
+ 			 	</figure>	
+ 			</div> 
+ 			<div>
+ 				<figure class="carousel">
+ 					<img class="carousel" src ="erikUpdates/4.jpg"/>
+ 					<figcaption class="carousel">Petra putting the muscles on "that's youre bicep!"</figcaption>
+ 			 	</figure>	
+ 			</div> 
+ 			<div>
+ 				<figure class="carousel">
+ 					<img class="carousel" src ="erikUpdates/6.jpg"/>
+ 					<figcaption class="carousel">Petra pressing the heart to go into song mode</figcaption>
+ 			 	</figure>	
+ 			</div> 
 		</div>
 
+		<div class="bukkit">
+			<h3 class="subtle">How it works:</h3>
+				<img class="photo" src="erikUpdates/playflow-02-02.png" />
+					<h3><br />Play modes: 
+						<ol>
+							<li class="spaced">Intro mode - Played when the suit is turned on, the suit gives the child introductory instructions: “Welcome to my body band. You’re in free play mode. Press the heart to start the muscle song!”</li>
+							<li class="spaced">Free Play mode - In free play mode, the suit makes tones associated with a specific movement, allowing the child to associate their muscles to the suit. As the child puts on the magnetic muscles, the suit tells them the name of each one, saying “that’s your bicep” when they put on their bicep, etc.</li>
+							<li class="spaced">Song mode - By pressing the heart button, the child can play a learning song. When the child moves the muscle that is prompted in the audio, a special song is played, helping them learn the names of muscles and anatomy. When the song finishes, the suit returns to free play mode. </li>
+
+						</ol>
+					</h3>
+ 		</div>
 
 
 		<div class="bukkit">
-			<h3>
-				<img class="photo" src="images/bodyBand1.png" />
-			</h3>
-		</div>
 
-		<div class="bukkit">
-			<h3>
-			Our hypothesis was that by learning anatomy in context of the child's own body, the could learn the bones and muscles in the human body and how they work together easily. In our initial user testing, our brave six-year old child correctly guessed all the muscles after playing through the song a couple of times!
-			</h3>
-		</div>
-
-
-		<div class="bukkit">
-			<h3>
-				<img class="photo" src="images/bodyBand2.svg" />
-			</h3>
-		</div>
-
-
-		<div class="bukkit">
-			<h3>
-			 In free play mode, whenever a muscle is flexed, a corresponding beep is made. In song mode, the child is given a series of cues (e.g. "Flex your bicep!"), to allow for a deeper level of mastery. Over time, these songs get harder and harder.
+			<h3 class="subtle">Exploded View:</h3>
+			<img class="photo" src="images/bodyBand3.svg"/>
+			<h3><br />Parts: 
+						<ol>
+							<li>heart muscle</li>
+							<li>large speaker</li>
+							<li>on/off button</li>
+							<li>arduino .wav shield</li>
+							<li>arduino uno (plays music file)</li>
+							<li>arduino mega (handles sensing</li>
+							<li>leg muscle</li>
+							<li>conductive sagnets</li>
+							<li>small speaker</li>
+							<li>flex sensor</li>
+						</ol>
+			 Here you can see our construction methodology. We have <a href="http://www.adafruit.com/product/182">flex sensors</a> as our main sensor, and we actuate with speakers. We also use the muscles as a simple <a href="http://arduino.cc/en/Tutorial/DigitalPins">pull-up switch</a> to detect if a muscle is on. 
 			 </h3>
-		</div>
 
-		<div class="bukkit">
-			<h3>
-				<img class="photo" src="images/bodyBand3.svg" />
+	</div>
+
+	<div class="bukkit">
+		<h3 class="subtle">User Testing</h3>
+		<h2><iframe src="https://player.vimeo.com/video/119516335?title=0&byline=0&portrait=0" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></h2>
+		<h3>
+			After using My Body Band a couple of times, we wanted to see how well our young play tester, Petra, remembered the different muscles she learned about. Here is a video of Petra's father and I giving her a quick quiz. Some things we learned from the testing were:
+			<ul>
+							<li>tt is great to have a parent around</li>
+							<li>the magnets for the muscles ought to be stronger</li>
+							<li>the learning is working!</li>
+						</ul>
+
 		</h3>
-	</div>
-	<div class="bukkit"><h3>
-			 Here you can see our construction methodology. We have <a href="http://www.adafruit.com/product/182">flex sensors</a> as our main sensor, and we actuate with speakers. We also use the muscles as a simple pull-up switch to detect if a muscle is on. 
-			 </h3>
-	</div>
-	<div class="bukkit"><h3>
-			 You can find some of the process documentation here: 
-			 <ul>
-			 	<li><a href="http://process.ryancan.build/post/110055982469/this-is-the-first-testing-we-did-of-the">fun video of our first prototype</a></li>
-			 	<li><a href="http://process.ryancan.build/post/110056056539/this-is-the-second-testing-that-we-did-of-the">even more fun video of our first prototype</a></li>
-			 	<li><a href="http://process.ryancan.build/post/110056097364/mid-hacking-of-the-final-child-scale-my-body">photo of the suit mid-hack</a></li>
-			 </ul>
-			 </h3>
-	</div>
+	</div>	
 
+	<div class="bukkit">
+		<h3 class="subtle">Prototyping</h3>
 		
+		<h2><iframe src='https://www.tumblr.com/video/ryanflomerfelt/110055982469/500/' style='display:block;background-color:transparent;overflow:hidden' class='embed_iframe tumblr_video_iframe' scrolling='no' frameBorder='0' data-can-gutter data-can-resize data-width='500' data-height='281' width='500' height='281' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe></h2>
+		<h3>
+			This is the first testing we did of the adult-scale my body band prototype. The main insight we got from this prototype was that it was really fun to just walk around and live life normally with the suit on. Different patterns would emerge unexpectedly. After I put the suit on, I was totally surprised when my leg was only in motion for about 10% of my stride.
+		</h3>
+
+		<h2><iframe src='https://www.tumblr.com/video/ryanflomerfelt/110056056539/500/' style='display:block;background-color:transparent;overflow:hidden' class='embed_iframe tumblr_video_iframe' scrolling='no' frameBorder='0' data-can-gutter data-can-resize data-width='500' data-height='887' width='500' height='887' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe></h2>
+		<h3>
+			This is the second testing that we did of the adult-scale my body band prototype. Sorry for the vertical video! Some insights that we got from this prototype were:
+			<ul>
+				<li>It is way fun to dance to a beat, but the beat should probably be simple to let the solo shine through.</li>
+				<li>The threshold rate of movement should be higher, because sometimes Abby seemed unsure if she was the one responsible for the sound, or if was just latency in the suit.</li>
+			</ul>
+		</h3>
+	</div>	
 	</body>
 
 </html>
