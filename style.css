@@ -97,6 +97,7 @@ figcaption {
 	font-size: 1em;
 	color: rgba(0,0,0,.8);
 	padding-top:1em;
+	max-width: 550px;
 }
 
 figcaption.carousel{
@@ -240,6 +241,7 @@ Y8,           I8P    i8'    ,8I  ,8'  Yb   ,8'  Yb   I8, ,8I  ,8'  Yb
 	background-color:#4CAF50;
 	opacity:.85;
 	height:45px;
+	z-index: 100;
 }
 
 .footer {
