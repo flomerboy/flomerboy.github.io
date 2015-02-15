@@ -4,45 +4,52 @@
 <!-- He built this from the ground up - vanilla -->
 
 	<head>
+		<!-- Taking care of business -->
 		<meta charset="utf-8">
 		<title>Ryan Can Build Things</title>
 		<meta name="description" content="Ryan is a person who can build things.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="author" content="Ryan Mather">
 		<meta name="keyword" content="Graphic Designer, Industrial Designer, Branding, Industrial Design, Graphic Design, User Experience, RISD, Polymaker">
+		<!-- Dependencies -->
+
+		<!-- JQuery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+		<!-- Retina business -->
 		<script type="text/javascript" src="/scripts/retina.js"></script>
 
+		<!-- Slick.js -->
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<!-- Slick CSS -->
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+		<!-- flomerboy CSS & JS -->	
+		<link rel="stylesheet" href="style.css"/>
 		<script src="projectScript.js"></script>
 
+		<!-- myfonts magic -->
+		<script type="text/javascript">
+		WebFontConfig = { fontdeck: { id: '50837' } };
 
-		<!-- It's responsive -->
-		<!-- I'm using separate style sheets instead of one for better performance -->
-		<!-- and it makes more sense to me that they should be separate -->
-		<link rel="stylesheet" href="style.css"/>
-
-		<!-- font magic -->
-<script type="text/javascript">
-WebFontConfig = { fontdeck: { id: '50837' } };
-
-(function() {
-  var wf = document.createElement('script');
-  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-  wf.type = 'text/javascript';
-  wf.async = 'true';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(wf, s);
-})();
-</script>
-
+		(function() {
+		  var wf = document.createElement('script');
+		  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+		  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		  wf.type = 'text/javascript';
+		  wf.async = 'true';
+		  var s = document.getElementsByTagName('script')[0];
+		  s.parentNode.insertBefore(wf, s);
+		})();
+		</script>
 
 		<!-- Typed.js for that sexy typing animation. http://www.mattboldt.com/demos/typed-js/ -->
 		<script src="typed.js"></script>
 		<script>
 			$(function(){
 				$("span").typed({
-					strings: ["a brand."],
+					strings: ["a robot."],
 					typeSpeed: 65,
 					loop: false
 				});
@@ -55,10 +62,8 @@ WebFontConfig = { fontdeck: { id: '50837' } };
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
 		ga('create', 'UA-43273200-2', 'auto');
 		ga('send', 'pageview');
-
 		</script>
 
 	</head>

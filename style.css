@@ -96,6 +96,7 @@ figcaption {
 	font-weight: 400;
 	font-size: 1em;
 	color: rgba(0,0,0,.8);
+	padding-top:1em;
 }
 
 figcaption.carousel{
