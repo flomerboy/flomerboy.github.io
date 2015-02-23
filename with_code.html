@@ -14,7 +14,7 @@
 
 		<!-- a favicon -->
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-		
+
 		<!-- Dependencies -->
 
 		<!-- JQuery -->
@@ -66,44 +66,104 @@
 		<div class="nav"><a id="home" href="#banner"><h3 id="name">home</h3></a></div>	
 	
 		<div class="bukkit" id="banner">
-			<h1 class="projectTitle">3D Systems: Procedurally Generated Form</h1>
+			<h1 class="projectTitle">3D Systems: <br />Procedurally Generated Form</h1>
 			<h3 class = "projectDescription">industrial design, parametric modelling, 3D printing</h3>
 		</div>
 
 		<div class="bukkit">
-			
+			<img class="photo" src="images/3ds8.JPG"></img>
+		</div>
+
+		<div class="bukkit">
+			<h3 class="subtle">Goal:</h3>
 			<h2 id="description">
 				Design a line of lighting objects that takes advantage of the affordances of 3D printing.
 			</h2>
 		</div>
 
-
 		<div class="bukkit">
-				<img class="photo"src="images/cubify2.png" />
-		</div>
-
-		<div class="bukkit">
-				<img class="photo" src="images/cubify3.png" />
-		</div>
-
-		<div class="bukkit">
-				<img class="photo" src="images/cubify4.png" />
-		</div>
-
-
-		<div class="bukkit">
+			<h3 class="subtle">the generated objects</h3>
+			<div class="adaptive-height">
+	 			<div>
+	 				<figure class="carousel">
+	 					<img class="carousel" src ="images/cubify2.png"/>
+	 					<figcaption class="carousel">a small tealight</figcaption>
+	 			 	</figure>	
+	 			</div> 
+	 			<div>
+	 				<figure class="carousel">
+	 					<img class="carousel" src ="images/cubify3.png"/>
+	 					<figcaption class="carousel">a small desk lamp</figcaption>
+	 			 	</figure>	
+	 			</div>
+	 			<div>
+	 				<figure class="carousel">
+	 					<img class="carousel" src ="images/cubify4.png"/>
+	 					<figcaption class="carousel">a pendant lamp</figcaption>
+	 			 	</figure>	
+	 			</div>
+			</div>
 			<h3>
 			In the summer of 2014 I worked at <a href="http://cubify.com/">3D Systems SF</a>. My main project was to develop a series of lighting objects to be printed in a ceramic 3D printer. I developed these designs parametrically through Rhino, Grasshopper, and physical prototyping.
 			</h3>
 		</div>
-		
-		<div class="bukkit">
-				<img class="photo" src="images/cubify1.png" />
-		</div>
 
 		<div class="bukkit">
+			<h3 class="subtle">the modelling process</h3>
+			<div class="adaptive-height">
+	 			<div>
+	 				<figure class="carousel">
+	 					<img class="carousel" src ="images/3ds1.png"/>
+	 					<figcaption class="carousel">a quick view of what a model looks beside the grasshopper algorithm that defines it.</figcaption>
+	 			 	</figure>	
+	 			</div> 
+	 			<div>
+	 				<figure class="carousel">
+	 					<img class="carousel" src ="images/3ds2.png"/>
+	 					<figcaption class="carousel">zooming in on the controls section, where I manipulate the variables that generate the form</figcaption>
+	 			 	</figure>	
+	 			</div>
+	 			<div>
+	 				<figure class="carousel">
+	 					<img class="carousel" src ="images/3ds3.png"/>
+	 					<figcaption class="carousel">another example of what can be created</figcaption>
+	 			 	</figure>	
+	 			</div>
+	 			<div>
+	 				<figure class="carousel">
+	 					<img class="carousel" src ="images/3ds4.png"/>
+	 					<figcaption class="carousel">one more example</figcaption>
+	 			 	</figure>	
+	 			</div>
+			</div>
 			<h3>
-			I also spent some time working to address the experience of co-creation applications. This is a mock-up of a UI for co-creation that would allow makers to control the creation of objects through the browser with a cocktail of slider-based input as well as other forms of input, like sound.
+			These images give a quick overview of what the control system looks like in the Grasshopper script I wrote. The complicated trigonometry happens in the red sections, purple sections are GUI elements, and the green sections are for debugging/explaining what's going on.
+			</h3>
+		</div>
+		<div class="bukkit">
+			<h3 class="subtle">the modelling process</h3>
+			<div class="adaptive-height">
+	 			<div>
+	 				<figure class="carousel">
+	 					<img class="carousel" src ="images/3ds5.png"/>
+	 					<figcaption class="carousel">overview of the whole script</figcaption>
+	 			 	</figure>	
+	 			</div> 
+	 			<div>
+	 				<figure class="carousel">
+	 					<img class="carousel" src ="images/3ds6.png"/>
+	 					<figcaption class="carousel">all the complex math, and the data trees that represent how the data is structured at each step, so that it is easier to understand if newcomers use it.</figcaption>
+	 			 	</figure>	
+	 			</div>
+	 			<div>
+	 				<figure class="carousel">
+	 					<img class="carousel" src ="images/3ds7.png"/>
+	 					<figcaption class="carousel"> a view of the user interface, and the labels that explain how (almost) everything work.</figcaption>
+	 			 	</figure>	
+	 			</div>
+			</div>
+			<h3>
+			After the function worked, I spend some time making the grasshopper file itself easily usable so that future designers at 3DS could use it. All the user has to do is 'bake' the geometry, and it's ready to go.
 			</h3>
 		</div>
 
