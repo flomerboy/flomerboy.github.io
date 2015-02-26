@@ -412,6 +412,10 @@ ___       __        ___ ___
 			margin:0;
 			max-width: 80vw;
 		}
+		.thumbnail
+		{
+		max-width: 90vw;
+		}
 
     }
 
@@ -490,6 +494,11 @@ ___       __        ___ ___
 
 		.nav {
 		height:60px;
+		}
+
+		.thumbnail
+		{
+		max-width: 90vw;
 		}
 
 
