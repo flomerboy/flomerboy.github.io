@@ -193,6 +193,8 @@ h4{
 	padding-left: 15vw;
 }
 
+h6 {display:block;}
+
 i {
 	padding-top: 10px;
 	color:rgba(0,0,0,.4);
@@ -369,6 +371,8 @@ ___       __        ___ ___
  			padding-left: 15vw;
 		}
 
+		h6 {display:block;}
+
     	.project{
 			text-align: center;
 			clear:left;
@@ -444,6 +448,8 @@ ___       __        ___ ___
 		h3 {
 			padding-right: 0px;
 		}
+
+		h6 {display:block;}
 
 		iframe {
 		max-width:80vw;
