@@ -1,8 +1,8 @@
 /*html and body reset to kill that gross border that tries to be there by default*/
 html, div, figure, figcaption, iframe {
 	margin:0px;
-	padding:0px;/*
-	overflow-x: hidden;*/
+	padding:0px;
+	overflow-x: hidden;
 }
 
 /*
@@ -530,6 +530,9 @@ ___       __        ___ ___
 			line-height: 0px;
 		}
 
+		.footer {
+			display:none;
+		}
 
     }
 /*
