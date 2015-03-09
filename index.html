@@ -45,7 +45,7 @@ PI8"88888P'"Y88P"Y8888P"    8P'   8I   8I   `Y8888P"Y8888P      `Y88P'"Y88P"'  P
 		<script src="typed.js"></script>
 		<script>
 			$(function(){
-				$("span").typed({
+				$("span#typed").typed({
 					strings: ["things.", "sites.", "chairs.", "brands.", "teams.", "forts.","stuff.","morale."],
 					typeSpeed: 65,
 					loop: true
@@ -85,8 +85,8 @@ PI8"88888P'"Y88P"Y8888P"    8P'   8I   8I   `Y8888P"Y8888P      `Y88P'"Y88P"'  P
 		<div class="nav"><a href="#banner"><h3 id="name">Ryan Flomerfelt Mather</h3></a></div>
 
 		<div class="home" id="banner">
-			<h1>Ryan is a designer.<br /> He builds 
-			<a class="typed"><span></span></a><br />
+			<h1>Ryan is a designer.<br /> He builds <span id="linebreak"><br id="linebreak" /></span>
+			<a class="typed"><span id="typed"></span></a><br />
 			</h1>
 		</div>
 
