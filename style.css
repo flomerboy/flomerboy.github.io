@@ -383,7 +383,21 @@ ___       __        ___ ___
     	h1{
  			padding-left: 15vw;
  			padding-top: 10vw;
+ 			line-height: 120%;
+ 			font-size:12vh;
 		}
+
+		h1.projectTitle {
+		font-size: 8vh;
+		margin-top: 0px;
+		padding-top: 11vh;
+		padding-bottom: 0vh;
+		padding-left: 15vw;
+		/*font-family: 'Roboto', sans-serif;*/
+		font-weight: 400;
+		color: #4caf50;
+		line-height: 100%;
+}
 
 		h6 {display:block;}
 
