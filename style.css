@@ -69,6 +69,11 @@ body {
 	background-color: rgba(0,0,0,.015);
 }
 
+div{
+	overflow:visible;
+}
+
+
 div#bio.bukkit {
 	margin-top: 4em;
 	background: url(stripes2.svg);
@@ -90,6 +95,7 @@ figure {
 
 figure.carousel{
 	padding-left:15vw;
+
 }
 
 figcaption {
@@ -166,7 +172,7 @@ h2#blog{
 h3 {
 	/* Apercu Mono */
 	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
-	padding-top:1em;
+	padding-top:2em;
 	padding-left: 15vw;
 	padding-right: 12em;
 	/*padding-bottom: 2em;*/
