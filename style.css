@@ -237,6 +237,16 @@ span#linebreak{
 	display:none;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #4CAF50;
+}
+
+::selection {
+    color: white; 
+    background: #4CAF50;
+}
+
 /*   ,gggg,                                                            
    ,88"""Y8b, ,dPYb,                                                   
   d8"     `Y8 IP'`Yb                                                   
@@ -276,7 +286,7 @@ Y8,           I8P    i8'    ,8I  ,8'  Yb   ,8'  Yb   I8, ,8I  ,8'  Yb
 
 .photo {
 	max-width:550px;
-	padding-left:15vw;
+	/*margin-left:15vw;*/
 }
 
 .project {
