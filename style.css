@@ -1,3 +1,5 @@
+@font-face { font-family: CenturySchoolbookIt; src: url('fonts/NewCenturySchlbkLTStd-It.otf'); }
+
 /*html and body reset to kill that gross border that tries to be there by default*/
 html{
 
@@ -89,6 +91,10 @@ em {
 	color:#FFFFFF;
 }
 
+em:hover {
+	text-decoration: underline;
+}
+
 figure {
 	padding: 1.5em;
 }
@@ -139,10 +145,10 @@ h1 {
 
 h1.projectTitle {
 	/* Apercu */
-	font-family:"Apercu Regular", Calibri, sans-serif; font-size-adjust:0.508; font-weight:normal; font-style:normal;	
+	font-family:"CenturySchoolbookIt", Calibri, sans-serif; font-size-adjust:0.5; font-weight:normal; font-style:normal;
 	font-size: 8vh;
 	margin-top: 0px;
-	padding-top: 11vh;
+	padding-top: 15vh;
 	padding-bottom: 0vh;
 	padding-left: 15vw;
 	/*font-family: 'Roboto', sans-serif;*/
@@ -155,36 +161,43 @@ h1.projectTitle {
 /*Used for body text in the project pages*/
 h2 {
 	/* Apercu Mono */
-	font-family:"Apercu Regular", Calibri, sans-serif; font-size-adjust:0.5; font-weight:normal; font-style:normal;
+	font-family:"CenturySchoolbookIt", Calibri, sans-serif; font-size-adjust:0.5; font-weight:normal; font-style:normal;
 	padding-left: 15vw;
 	padding-right: 12em;
 	/*padding-bottom: 2em;*/
 	font-weight: 400;
-	font-size: 2em;
+	font-size: 2.5em;
 	color: rgba(0,0,0,.8);
-	line-height: 140%;
+	line-height: 140%;/*
+	font-style: italic;*/
 }
 
-h2#blog{
-	color:#FFFFFF;
+h2#blog {
+	padding-top:2em;
+	font-family:"CenturySchoolbookIt", serif; font-size-adjust:0.5; font-weight:normal; font-style:normal;
+	color:white;
 }
 
 h3 {
 	/* Apercu Mono */
-	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
+	font-family:"Apercu Regular", 'Calibri', sans-serif; font-size-adjust:0.5; font-weight:normal; font-style:normal;
 	padding-top:2em;
 	padding-left: 15vw;
-	padding-right: 12em;
+	padding-right: 14em;
 	/*padding-bottom: 2em;*/
 	font-weight: 400;
 	font-size: 1em;
 	color: rgba(0,0,0,.8);
 	max-width: 45vw;
 	margin:0px;
+	line-height: 150%;
 }
 
 h3.projectDescription {
-	padding-bottom: 2.5vh;
+	color:rgba(0,0,0,.4);
+	padding-bottom: 1em;
+	font-family:"Apercu Mono", 'Calibri', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
+
 }
 
 h3#lastUpdated {
@@ -192,11 +205,25 @@ h3#lastUpdated {
 	font-size: .75em;
 	padding-left: 5vw;
 	padding-top:7.5px;
+	font-family:"Apercu Mono", 'Calibri', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
+}
+
+h3#name
+{
+	position:fixed;
+	color:#FFFFFF;
+	display:none;
+	z-index: -1;
+	font-size: 1.25em;
+	padding-left: 3vw;
+	padding-top:10px;
+	font-family:"Apercu Mono", 'Calibri', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
 }
 
 h3.subtle{
 	color:rgba(0,0,0,.4);
 	padding-bottom: 1em;
+	font-family:"Apercu Mono", 'Calibri', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
 }
 
 h4{
@@ -344,27 +371,9 @@ background: -webkit-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Chrome10+,
 background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
 }
 
-
-
-h2#blog {
-	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
-	padding-top: 5vh;
-}
-
 #even {
 	clear:left;
 	padding-left: 10vw;
-}
-
-#name
-{
-	position:fixed;
-	color:#FFFFFF;
-	display:none;
-	z-index: -1;
-	font-size: 1.25em;
-	padding-left: 3vw;
-	padding-top:10px;
 }
 
 #odd {
@@ -432,6 +441,7 @@ ___       __        ___ ___
 			margin:none;
 			padding:none;
 			max-width: 100%;
+			font-family:"Apercu Mono", 'Calibri', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
 		}
 
 		#even{
@@ -497,9 +507,14 @@ ___       __        ___ ___
 			margin-right: 15%;
 		}
 
+		h1.projectTitle{
+			padding-left: 10vw;
+		}
+
 		h2 {
 			padding-right:10vw;
 			padding-left:10vw;
+			font-size: 2em;
 		}
 
 		h3 {
@@ -568,8 +583,8 @@ ___       __        ___ ___
 		}
 
 		.photo {
-		max-width:80vw;
-		padding-left:10vw;
+		max-width:80vw;/*
+		padding-left:10vw;*/
 		}
 
 		.nav {
