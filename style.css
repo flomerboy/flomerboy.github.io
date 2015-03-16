@@ -324,24 +324,24 @@ Y8,           I8P    i8'    ,8I  ,8'  Yb   ,8'  Yb   I8, ,8I  ,8'  Yb
 .thumbnail
 {
 	/*border-radius:5px;*/
-	-webkit-box-shadow: 15px 15px 15px 0px  rgba(0,0,0,0.05);
-	-moz-box-shadow: 15px 15px 15px 0px  rgba(0,0,0,0.05);
-	box-shadow: 15px 15px 15px 0px  rgba(0,0,0,0.05);
+	-webkit-box-shadow: 15px 15px 15px 0px  rgba(0,0,0,0.1);
+	-moz-box-shadow: 15px 15px 15px 0px  rgba(0,0,0,0.1);
+	box-shadow: 15px 15px 15px 0px  rgba(0,0,0,0.1);
 	transition: box-shadow .5s;
 	max-width: 375px;
 }
 
 .thumbnail:hover{
-	-webkit-box-shadow: 20px 20px 15px 0px  rgba(0,0,0,0.03);
-	-moz-box-shadow: 20px 20px 15px 0px rgba(0,0,0,0.03);
-	box-shadow: 20px 20px 15px 0px  rgba(0,0,0,0.03);
+	-webkit-box-shadow: 20px 20px 15px 0px  rgba(0,0,0,0);
+	-moz-box-shadow: 20px 20px 15px 0px rgba(0,0,0,0);
+	box-shadow: 20px 20px 15px 0px  rgba(0,0,0,0);
 }
 
-.thumbnail:active{
+/*.thumbnail:active{
 	-webkit-box-shadow: 25px 25px 15px 0px  rgba(0,0,0,0.01);
 	-moz-box-shadow: 25px 25px 15px 0px rgba(0,0,0,0.01);
 	box-shadow: 25px 25px 15px 0px rgba(0,0,0,0.01);
-}
+}*/
 
 .typed:hover {
 	text-decoration: none;
@@ -391,6 +391,10 @@ background: -o-linear-gradient(top, #4caf50 0%,#3e8e42 100%); /* Opera 11.10+ */
 	padding-top:0px;
 	margin-top:0px;
 	padding-left: 12vw;
+}
+
+#dim{
+	opacity:.2;
 }
 
 
