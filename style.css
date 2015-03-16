@@ -313,6 +313,7 @@ Y8,           I8P    i8'    ,8I  ,8'  Yb   ,8'  Yb   I8, ,8I  ,8'  Yb
 
 .photo {
 	max-width:550px;
+	max-height:550px;
 	/*margin-left:15vw;*/
 }
 
