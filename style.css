@@ -121,7 +121,8 @@ figcaption.carousel{
 	font-family:"Apercu Mono Regular", 'Andale Mono', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
 	/*font-family: 'Roboto', sans-serif;*/
 	font-weight: 400;
-	font-size: 1em;
+	font-size: .8em;
+	line-height: 1.5em;
 	color: rgba(0,0,0,.4);
 	padding:none;
 	margin: none;
@@ -224,6 +225,7 @@ h3.subtle{
 	color:rgba(0,0,0,.4);
 	padding-bottom: 1em;
 	font-family:"Apercu Mono", 'Calibri', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
+	line-height: 1.5em;
 }
 
 h4{
@@ -447,6 +449,8 @@ ___       __        ___ ___
 			padding:none;
 			max-width: 100%;
 			font-family:"Apercu Mono", 'Calibri', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
+			font-size: 5em;
+			line-height: 1.5em;
 		}
 
 		#even{
