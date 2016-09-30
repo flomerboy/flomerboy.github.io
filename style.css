@@ -49,6 +49,10 @@ a {
 	padding-top:1vw;
 }
 
+a.dark {
+  color: #006200;
+}
+
 a:hover {
 	border-bottom: 3px solid;
 }
@@ -78,14 +82,10 @@ div{
 
 div#bio.bukkit {
 	margin-top: 4em;
-	background: url(stripes2.svg);
+  background-color:#4CAF50;
 	padding-bottom: 5vw;
 }
 
-div#blog{
-	background-color:#4CAF50;
-	padding-top: 0vw;
-}
 
 em {
 	color:#FFFFFF;
@@ -350,6 +350,9 @@ Y8,           I8P    i8'    ,8I  ,8'  Yb   ,8'  Yb   I8, ,8I  ,8'  Yb
 	text-decoration: none;
 }
 
+.u-text-color-white {
+  color:#FFFFFF;
+}
 
 /*
       ,a8a,  ,gggggggggggg,             
