@@ -1,26 +1,6 @@
 <!DOCTYPE html>
-<!-- The personal website of Ryan Flomerfelt Mather -->
-<!--
-
-	
-,dPYb,  ,dPYb,                                                     ,dPYb,                             
- IP'`Yb  IP'`Yb                                                     IP'`Yb                             
- I8  8I  I8  8I                                                     I8  8I                             
- I8  8'  I8  8'                                                     I8  8'                             
- I8 dP   I8 dP    ,ggggg,     ,ggg,,ggg,,ggg,    ,ggg,    ,gggggg,  I8 dP         ,ggggg,    gg     gg 
- I8dP    I8dP    dP"  "Y8ggg ,8" "8P" "8P" "8,  i8" "8i   dP""""8I  I8dP   88gg  dP"  "Y8ggg I8     8I 
- I8P     I8P    i8'    ,8I   I8   8I   8I   8I  I8, ,8I  ,8'    8I  I8P    8I   i8'    ,8I   I8,   ,8I 
-,d8b,_  ,d8b,_ ,d8,   ,d8'  ,dP   8I   8I   Yb, `YbadP' ,dP     Y8,,d8b,  ,8I  ,d8,   ,d8'  ,d8b, ,d8I 
-PI8"88888P'"Y88P"Y8888P"    8P'   8I   8I   `Y8888P"Y8888P      `Y88P'"Y88P"'  P"Y8888P"    P""Y88P"888
- I8 `8,                                                                                           ,d8I'
- I8  `8,                                                                                        ,dP'8I 
- I8   8I                                                                                       ,8"  8I 
- I8   8I                                                                                       I8   8I 
- I8, ,8'                                                                                       `8, ,8I 
-  "Y8P'                                                                                         `Y8P" -->
-<!-- He built this from the ground up - vanilla -->
+<!--this website is garbage and I'm making a new one soon...-->
 <html>
-
 	<head>
 		<meta charset="utf-8">
 		<title>Ryan Can Build Things</title>
@@ -31,28 +11,8 @@ PI8"88888P'"Y88P"Y8888P"    8P'   8I   8I   `Y8888P"Y8888P      `Y88P'"Y88P"'  P
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<script src="indexScript.js"></script>
 		<script type="text/javascript" src="retina.js"></script>
-
-		<!-- a favicon -->
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-
-		<!-- It's responsive -->
-		<!-- I'm using separate style sheets instead of one for better performance -->
-		<!-- and for some reason it makes more sense to me that they should be separate -->
 		<link rel="stylesheet" href="style.css"/>
-
-
-		<!-- Typed.js for that sexy typing animation. http://www.mattboldt.com/demos/typed-js/ -->
-		<script src="typed.js"></script>
-		<script>
-			$(function(){
-				$("span#typed").typed({
-					strings: ["things.", "sites.", "chairs.", "brands.", "teams.", "forts.","stuff.","morale."],
-					typeSpeed: 65,
-					loop: true
-				});
-			});
-		</script>
-
 		<!-- Google Analytics! -->
 		<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -62,10 +22,8 @@ PI8"88888P'"Y88P"Y8888P"    8P'   8I   8I   `Y8888P"Y8888P      `Y88P'"Y88P"'  P
 		ga('create', 'UA-43273200-2', 'auto');
 		ga('send', 'pageview');
 		</script>
-
 		<script type="text/javascript">
 		WebFontConfig = { fontdeck: { id: '50837' } };
-
 		(function() {
 		  var wf = document.createElement('script');
 		  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
@@ -76,21 +34,18 @@ PI8"88888P'"Y88P"Y8888P"    8P'   8I   8I   `Y8888P"Y8888P      `Y88P'"Y88P"'  P
 		  s.parentNode.insertBefore(wf, s);
 		})();
 		</script>
-
 	</head>
-
-	<!--Here's the body! This is where all the art and design happens-->
 	<body>
-		
-		<div class="nav"><a href="#banner"><h3 id="name">Ryan Flomerfelt Mather</h3></a></div>
+		<div class="bukkit" id="bio">
+			<h3 class="u-text-color-white">
+				Hi! My name is Ryan, and I am a Product Designer. Currently, I design products at <a class="dark" href="http://www.littlebits.com">littleBits</a> where I have focused on our educational products. I'm also doing some consulting for <a class="dark" href="http://www.anjiplay.com">Anji Play</a>, and running a reading club about pedagogy called <a href="http://ryancan.build/pedagogy-play-lab" class="dark">Pedagogy Play Lab</a>. I studied Industrial Design at <a class="dark" href="http://www.risd.edu">RISD</a>, where I served as President at <a class="dark" href="http://steamwith.us">RISD STEAM</a> and <a class="dark" href="http://www.risdquickies.org">RISD Quickies</a>. I've also done contract Industrial Design and Branding work for awesome tech startups <a class="dark" href="http://www.polymaker.com">Polymaker</a> and <a class="dark" href="http://www.madebysupply.com">Supply</a>. I'm interested in educational technology, human-computer interaction, and human-centered product design.
 
-		<div class="home" id="banner">
-			<h1>Ryan is a designer.<br /> He builds <span id="linebreak"><br id="linebreak" /></span>
-			<a class="typed" id="noDec"><span id="typed"></span></a><br />
-			</h1>
+				Say hi:
+				<a class="dark" href="mailto:rmather@risd.edu" target="_blank">Email</a>,
+				<a class="dark" href="http://twitter.com/flomerboy">twitter</a>,
+				<a class="dark" href="https://github.com/flomerboy">fork me</a><br /><br />
+			</h3>
 		</div>
-
-
 		<div class="bukkit" id="work">
 		<h2 id="workTitle">The Work:</h2>
 			<a href="for_learning.html">
@@ -101,133 +56,54 @@ PI8"88888P'"Y88P"Y8888P"    8P'   8I   8I   `Y8888P"Y8888P      `Y88P'"Y88P"'  P
 					</figure>
 				</div>
 			</a>
-
-
-
-			<a href="for_learning_languages.html">
-				<div class="project">
-					<figure>
-						<img class="thumbnail" src="images/erduocover.png" />
-						<figcaption>耳多／@ll ears (WIP)<br /><i>UI/UX, GD, PM</i></figcaption>
-					</figure>
-				</div>
-			</a>
-
-
-			<a href="an_app.html">
-				<div class="project" id="even">
-					<figure>
-						<img class="thumbnail" src="images/hourglasscover.png" />
-						<figcaption>hourglass (WIP)<br /><i>UI/UX, GD, PM</i></figcaption>
-					</figure>
-				</div>
-			</a>
-				
-			<a href="a_robot.html">
-				<div class="project" >
-					<figure>
-						<img class="thumbnail" src="images/robotCover.png" />
-						<figcaption>walkerbot (WIP)<br /><i>ID, UX</i></figcaption>
-					</figure>
-				</div>
-			</a>
-
 			<a href="experiences.html">
-				<div class="project" id="odd">
+				<div class="project" >
 					<figure>
 						<img class="thumbnail" src="images/paramour6.png" />
 						<figcaption>paramour (WIP)<br /><i>UI, UX</i></figcaption>
 					</figure>
 				</div>
 			</a>
-
 			<a href="interactions.html">
-				<div class="project" >
+				<div class="project" id="odd">
 					<figure>
 						<img class="thumbnail" src="images/RadiationCover.png" />
 						<figcaption>Human-Radiation Interaction (WIP)<br /><i>ID, UX</i></figcaption>
 					</figure>
 				</div>
 			</a>
-
 			<a href="a_club.html">
-				<div class="project" id="even">
+				<div class="project" >
 					<figure>
 						<img class="thumbnail" src="images/quickiesCover.png" />
 						<figcaption>RISD Quickies<br /><i>PM</i></figcaption>
 					</figure>
 				</div>
 			</a>
-
-
 			<a href="a_brand.html">
-				<div class="project"  >
+				<div class="project"  id="odd">
 					<figure>
 						<img class="thumbnail" src="images/polymakerCover.png" />
 						<figcaption>polymaker re-branding<br /><i>GD</i></figcaption>
 					</figure>
 				</div>
 			</a>
-
-
 			<a href="with_code.html">
-				<div class="project" id="odd" >
+				<div class="project" >
 					<figure>
 						<img class="thumbnail" src="images/cubifyCover.png" />
 						<figcaption>3D Systems: Procedurally generated form<br /><i>ID</i></figcaption>
 					</figure>
 				</div>
 			</a>
-	
-			
-
-			<a href="a_fun_app.html">
-				<div class="project" >
-					<figure>
-						<img class="thumbnail" src="images/wemapCover.png" />
-						<figcaption>wemap<br /><i>UI, UX</i></figcaption>
-					</figure>
-				</div>
-			</a>
-
 			<a href="organizations.html">
-				<div class="project" id="even">
+				<div class="project" id="odd" >
 					<figure>
 						<img class="thumbnail" src="images/STEAMCover.png" />
 						<figcaption>RISD STEAM<br /><i>PM, GD</i></figcaption>
 					</figure>
 				</div>
 			</a>
-
-
-			<!-- <a href="http://firsthand.land">
-				<div class="project" id="even">
-					<figure>
-						<img class="thumbnail" src="images/firstCover.png" />
-						<figcaption>first hand land<br /><i>UX</i><br /><br />launches site</figcaption>
-					</figure>
-				</div>
-			</a>
- -->
-
-			
 		</div>
-
-		<div class="bukkit" id="bio">
-      <h3 class="u-text-color-white">
-        Hi! My name is Ryan, and I am a Product Designer. Currently, I design products at <a class="dark" href="http://www.littlebits.com">littleBits</a> where I have focused on our educational products. I studied Industrial Design at <a class="dark" href="http://www.risd.edu">RISD</a>. Where I served as President at <a class="dark" href="http://steamwith.us">RISD STEAM</a> and <a class="dark" href="http://www.risdquickies.org">RISD Quickies</a>. I've also done contract Industrial Design and Branding work for awesome tech startups <a class="dark" href="http://www.polymaker.com">Polymaker</a> and <a class="dark" href="http://www.madebysupply.com">Supply</a> through my consulting company. I'm interested in educational technology, human-computer interaction, and human-centered product design.
-			
-				Say hi:
-				<a class="dark" href="mailto:rmather@risd.edu" target="_blank">Email</a>, 
-				<a class="dark" href="resume.pdf">resume</a>, 
-				<a class="dark" href="http://twitter.com/flomerboy">twitter</a>, 
-				<a class="dark" href="http://process.ryancan.build">web-log</a>, 
-				<a class="dark"   href="https://github.com/flomerboy">fork me</a><br /><br />
-			</h3>
-		</div>
-
-		<div class="footer"><h3 id="lastUpdated">Last Updated 3/3/15 - All things copyright 2015 - Ryan Mather </h3></div>
-
 	</body>
-
 </html>
