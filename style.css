@@ -437,7 +437,7 @@ ___       __        ___ ___
 			padding:none;
 			max-width: 100%;
 			font-family:"Apercu Mono", 'Calibri', monospace; font-size-adjust:0.5; font-weight:normal; font-style:normal;
-			font-size: 5em;
+			font-size: 1.5em;
 			line-height: 1.5em;
 		}
 
@@ -511,7 +511,7 @@ ___       __        ___ ___
 		h2 {
 			padding-right:10vw;
 			padding-left:10vw;
-			font-size: 2em;
+			font-size: 10px;
 		}
 
 		h3 {
