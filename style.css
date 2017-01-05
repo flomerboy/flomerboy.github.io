@@ -1,7 +1,7 @@
 @font-face { font-family: CenturySchoolbookIt; src: url('fonts/NewCenturySchlbkLTStd-It.otf'); }
-@font-face { font-family: "Apercu Bold"; src: url('fonts/ap-bold.otf'); }
-@font-face { font-family: "Apercu Medium"; src: url('fonts/ap-medium.otf'); }
-@font-face { font-family: "Apercu Regular"; src: url('fonts/ap-regular.otf'); }
+@font-face { font-family: "Apercu Bold"; src: url('http://ryancan.build/fonts/ap-bold.otf'); }
+@font-face { font-family: "Apercu Medium"; src: url('http://ryancan.build/fonts/ap-medium.otf'); }
+@font-face { font-family: "Apercu Regular"; src: url('http://ryancan.build/fonts/ap-regular.otf'); }
 
 /*html and body reset to kill that gross border that tries to be there by default*/
 html{
